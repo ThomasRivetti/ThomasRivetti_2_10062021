@@ -11,141 +11,342 @@
     
     <header class="head"><!--Header-->
         <figure class="logo">
-            <img src="/Projet 2 - Reservia/images/logo/Reservia@3x.png" alt="logo">
+            <img src="/Projet2-Reservia/images/logo/Reservia@3x.png" alt="logo">
         </figure>
         
         <nav class="navigation"><!--Menu navigation site-->
             <ul>
                 <li><a href="#">Hébergements</a></li>
                 <li><a href="#"> Activités</a></li>
-                <li><a href="#">S'inscrire</a></li>
             </ul>
-        </nav>   
+        </nav> 
+        <a href="inscription">S'inscrire</a>
     </header>
+       
+    <div class="main"><!--conteneur principal des sections 1/2/3 et aside--> 
         
-    <section class="recherche"> <!--section 1 en tête et champ de recherche -->
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <h2>En plein centre ville ou en pleine nature</h2> 
-        
-        <form action="recherche.php" method="post"> <!--champ de recherche-->
-            <input type="search" name="research" id="research">
-            <label for="research"> recherche</label>
-        </form>
-           
-        <ul class="filtres"><!--les filtres de recherche-->
-                <li><a href="#">Économique</a></li>
-                <li><a href="#">Familial</a> </li>
-                <li><a href="#">Romantique</a></li>
-                <li><a href="#">Animaux autorisés</a></li>
-            </ul>
-    
-        <small>Plus de 500 logements sont disponibles dans cette ville</small>
-    </section>
-
-    <div class="main-content">
-        <section class="hebergement-marseille"><!--section HEBERGEMENT-->
-            <h3>Hébergements à Marseille</h3>
-
+        <section class="recherche"> <!--section 1 en tête et champ de recherche -->
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <h4>En plein centre ville ou en pleine nature</h4> 
             
-            <h4>Affichez plus</h4>
+            <form action="recherche.php" method="post"> <!--champ de recherche-->
+                <input type="search" name="research" id="research">
+                <label for="research"> recherche</label>
+            </form>
+            
+            <ul class="filtres"><!--les filtres de recherche-->
+                    <li><a href="#">Économique</a></li>
+                    <li><a href="#">Familial</a> </li>
+                    <li><a href="#">Romantique</a></li>
+                    <li><a href="#">Animaux autorisés</a></li>
+                </ul>
+        
+            <small>Plus de 500 logements sont disponibles dans cette ville</small>
         </section>
 
-        <aside class="populaires"> <!--zone hotels populaires droite-->
-            <h3>Les plus populaires</h3>
+        <div class="main-content">
+            <section class="hebergement-marseille"><!--section 2 HEBERGEMENT-->
+                <h3>Hébergements à Marseille</h3>
+        
+                <ul>
+                    <li>
+                        <a href="">
+                            <article>
+                                <figure>
+                                    <img src="Projet2-Reservia/images/hebergements/4_small/cannebiere.jpg" alt="Auberge la Cannebière"/>
+                                    <figcaption>
+                                        <h5>Auberge la Cannebière</h5>
+                                        <p>Nuit à partir de 25€</p>
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </p>
+                                    </figcaption>                                
+                                </figure>
+                            </article>
+                        </a>
+                    </li>    
+                </ul>   
+                <ul>
+                    <li>
+                        <a href="">
+                            <article>
+                                <figure>
+                                    <img src="Projet2-Reservia/images/hebergements/4_small/port.jpg" alt="Hôtel du port"/>
+                                    <figcaption>
+                                        <h5>Hôtel du port</h5>
+                                        <p>Nuit à partir de 52€</p>
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </p>
+                                    </figcaption>                                
+                                </figure>
+                            </article>
+                        </a>
+                    </li>    
+                </ul>   
+                <ul>
+                    <li>
+                        <a href="">
+                            <article>
+                                <figure>
+                                    <img src="Projet2-Reservia/images/hebergements/4_small/mouettes.jpg" alt="Hôtel Les mouettes"/>
+                                    <figcaption>
+                                        <h5>Hôtel Les mouettes</h5>
+                                        <p>Nuit à partir de 76€</p>
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </p>
+                                    </figcaption>                                
+                                </figure>
+                            </article>
+                        </a>
+                    </li>    
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">
+                            <article>
+                                <figure>
+                                    <img src="Projet2-Reservia/images/hebergements/4_small/hotel_mer.jpg" alt="Hôtel de la mer"/>
+                                    <figcaption>
+                                        <h5>Hôtel de la mer</h5>
+                                        <p>Nuit à partir de 46€</p>
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </p>
+                                    </figcaption>                                
+                                </figure>
+                            </article>
+                        </a>
+                    </li>    
+                </ul>   
+                <ul>
+                    <li>
+                        <a href="">
+                            <article>
+                                <figure>
+                                    <img src="Projet2-Reservia/images/hebergements/4_small/panier.jpg" alt="Auberge Le Panier"/>
+                                    <figcaption>
+                                        <h5>Auberge Le Panier</h5>
+                                        <p>Nuit à partir de 23€</p>
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </p>
+                                    </figcaption>                                
+                                </figure>
+                            </article>
+                        </a>
+                    </li>    
+                </ul>   
+                <ul>
+                    <li>
+                        <a href="">
+                            <article>
+                                <figure>
+                                    <img src="Projet2-Reservia/images/hebergements/4_small/amina.jpg" alt="Hôtel chez Amina"/>
+                                    <figcaption>
+                                        <h5>Hôtel chez Amina</h5>
+                                        <p>Nuit à partir de 96€</p>
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </p>
+                                    </figcaption>                                
+                                </figure>
+                            </article>
+                        </a>
+                    </li>    
+                </ul>        
+
+                
+                <h3>Affichez plus</h3>
+            </section>
+
+            <aside class="populaires"> <!--zone hotels populaires droite-->
+                <h2>Les plus populaires</h2>
+                
+                <ul>
+                    <li>
+                        <a href="">
+                            <article>
+                                <figure>
+                                    <img src="Projet2-Reservia/images/hebergements/4_small/soleil_matin.jpg" alt="Hôtel Le soleil du matin"/>
+                                    <figcaption>
+                                        <h5>Hôtel Le soleil du matin</h5>
+                                        <p>Nuit à partir de 128€</p>
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </p>
+                                    </figcaption>                                
+                                </figure>
+                            </article>
+                        </a>
+                    </li>    
+                </ul>   
+                <ul>
+                    <li>
+                        <a href="">
+                            <article>
+                                <figure>
+                                    <img src="Projet2-Reservia/images/hebergements/4_small/coeur_eau.jpg" alt="Au coeur de l'eau Chambres d'hôtes"/>
+                                    <figcaption>
+                                        <h5>Au coeur de l'eau Chambres d'hôtes</h5>
+                                        <p>Nuit à partir de 71€</p>
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </p>
+                                    </figcaption>                                
+                                </figure>
+                            </article>
+                        </a>
+                    </li>    
+                </ul>   
+                <ul>
+                    <li>
+                        <a href="">
+                            <article>
+                                <figure>
+                                    <img src="Projet2-Reservia/images/hebergements/4_small/tout_bleu_blanc.jpg" alt="Hôtel Tout bleu et Blanc"/>
+                                    <figcaption>
+                                        <h5>Hôtel Tout bleu et Blanc</h5>
+                                        <p>Nuit à partir de 68€</p>
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </p>
+                                    </figcaption>                                
+                                </figure>
+                            </article>
+                        </a>
+                    </li>    
+                </ul>        
+            </aside>
+        </div>
+
+        <section class="activites"> <!--Section 3 -->
+            <h2>Activités à Marseille</h2>
             <ul>
                 <li>
-                    <a href="">
-                        <article>
-                            <figure>
-                                <img src="" alt=""/>
-                                <figcaption>
-                                    <h5></h5>
-                                    <p></p>
-                                    <p>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </p>
-                                </figcaption>                                
-                            </figure>
-                        </article>
-                    </a>
-                </li>    
-            </ul>   
-            <ul>
+                    <article>
+                        <figure>
+                            <img src="Projet2-Reservia/images/activites/4_small/Vieux-Port.jpg" alt="Vieux Port"/>
+                            <figcaption>
+                                <h5>Vieux Port</h5>
+                            </figcaption>                           
+                        </figure>
+                    </article>
+                </li>
                 <li>
-                    <a href="">
-                        <article>
-                            <figure>
-                                <img src="" alt=""/>
-                                <figcaption>
-                                    <h5></h5>
-                                    <p></p>
-                                    <p>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </p>
-                                </figcaption>                                
-                            </figure>
-                        </article>
-                    </a>
-                </li>    
-            </ul>   
-            <ul>
+                    <article>
+                        <figure>
+                            <img src="Projet2-Reservia/images/activites/4_small/Fort-de-Pomegues.jpg" alt="Fort de Pomègues"/>
+                            <figcaption>
+                                <h5>Fort de Pomègues</h5>
+                            </figcaption>                            
+                        </figure>
+                    </article>
+                </li>
                 <li>
-                    <a href="">
-                        <article>
-                            <figure>
-                                <img src="" alt=""/>
-                                <figcaption>
-                                    <h5></h5>
-                                    <p></p>
-                                    <p>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </p>
-                                </figcaption>                                
-                            </figure>
-                        </article>
-                    </a>
-                </li>    
-            </ul>        
-        </aside>
+                    <article>
+                        <figure>
+                            <img src="Projet2-Reservia/images/activites/4_small/Îles-du-Frioul.jpg" alt="Îles du Frioul"/>
+                            <figcaption>
+                                <h5>Îles du Frioul</h5>
+                            </figcaption>                            
+                        </figure>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <figure>
+                            <img src="Projet2-Reservia/images/activites/4_small/Parc-National-des-Calanques.jpg" alt="Parc National des Calanques"/>
+                            <figcaption>
+                                <h5>Parc National des Calanques</h5>
+                            </figcaption>                            
+                        </figure>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <figure>
+                            <img src="Projet2-Reservia/images/activites/4_small/Notre-Dame-de-la-Garde.jpg" alt="Notre-Dame-de-la-Garde"/>
+                            <figcaption>
+                                <h5>Notre-Dame-de-la-Garde</h5> 
+                            </figcaption>                           
+                        </figure>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <figure>
+                            <img src="Projet2-Reservia/images/activites/4_small/Parc-Longchamp.jpg" alt="Parc Longchamp"/>
+                            <figcaption>
+                                <h5>Parc Longchamp</h5>
+                            </figcaption>                            
+                        </figure>
+                    </article>
+                </li>
+            </ul>
+        </section>
     </div>
 
-    <section class="activites">
-
-
-    </section>
-
-
-
-    <footer class="end"> <!--Footer, 3 listes-->
-        <h5 class="a-propos">A propos</h5>
-        <ul class="propos">
-            <li>Fonctionnement du site</li>
-            <li>Conditions générales de vente</li>
-            <li>Données et confidentialité</li>
-        </ul>
-
-        <h5 class="hebergement">Nos Hébergements</h5>   
-        <ul class="heber">
-            <li>Charte qualité </li>
-            <li>Soumettre votre hôtel</li>
-        </ul>    
-        <h5 class="assistance">Assistance</h5>
-        <ul class="assist">
-            <li>Centre d'aide</li>
-            <li>Nous contacter</li>
-        </ul>
+    <footer class="end"> <!--Footer, 3 listes dans des DIV-->
+        <div class="propos">
+            <h4 class="a-propos">A propos</h4>
+            <ul>
+                <li><a href="#">Fonctionnement du site</a></li>
+                <li><a href="#">Conditions générales de vente</a></li>
+                <li><a href="#">Données et confidentialité</a></li>
+            </ul>
+        </div>
+        <div class="hebergement">
+            <h4 class="heber">Nos Hébergements</h4>   
+            <ul>
+                <li><a href="#">Charte qualité</a></li>
+                <li><a href="#">Soumettre votre hôtel</a></li>
+            </ul>
+        </div>
+        <div class="assist">    
+            <h4 class="assistance">Assistance</h4>
+            <ul>
+                <li><a href="#">Centre d'aide</a></li>
+                <li><a href="#">Nous contacter</a></li>
+            </ul>
+        </div>
     </footer>
 
 </body>

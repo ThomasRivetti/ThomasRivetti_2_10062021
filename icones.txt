@@ -1,0 +1,22 @@
+<!--localisation-->
+<i class="fa-solid fa-location-dot"></i>
+
+<!--economique-->
+<i class="fa-solid fa-money-bill-wave"></i>
+
+<!--familial-->
+<i class="fa-solid fa-child"></i>
+
+
+<!--Romantique-->
+<i class="fa-solid fa-heart"></i>
+
+<!--Animaux autorisés-->
+<i class="fa-solid fa-dog"></i>
+
+<!--information-->
+<i class="fa-solid fa-info"></i>
+
+<!--populaire-->
+<i class="fa-solid fa-chart-line-up"></i>
+
