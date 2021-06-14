@@ -2,11 +2,151 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thomasrivetti Projet 2 Reservia</title>
 </head>
 <body>
     
+    <header class="head"><!--Header-->
+        <figure class="logo">
+            <img src="/Projet 2 - Reservia/images/logo/Reservia@3x.png" alt="logo">
+        </figure>
+        
+        <nav class="navigation"><!--Menu navigation site-->
+            <ul>
+                <li><a href="#">Hébergements</a></li>
+                <li><a href="#"> Activités</a></li>
+                <li><a href="#">S'inscrire</a></li>
+            </ul>
+        </nav>   
+    </header>
+        
+    <section class="recherche"> <!--section 1 en tête et champ de recherche -->
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <h2>En plein centre ville ou en pleine nature</h2> 
+        
+        <form action="recherche.php" method="post"> <!--champ de recherche-->
+            <input type="search" name="research" id="research">
+            <label for="research"> recherche</label>
+        </form>
+           
+        <ul class="filtres"><!--les filtres de recherche-->
+                <li><a href="#">Économique</a></li>
+                <li><a href="#">Familial</a> </li>
+                <li><a href="#">Romantique</a></li>
+                <li><a href="#">Animaux autorisés</a></li>
+            </ul>
+    
+        <small>Plus de 500 logements sont disponibles dans cette ville</small>
+    </section>
+
+    <div class="main-content">
+        <section class="hebergement-marseille"><!--section HEBERGEMENT-->
+            <h3>Hébergements à Marseille</h3>
+
+            
+            <h4>Affichez plus</h4>
+        </section>
+
+        <aside class="populaires"> <!--zone hotels populaires droite-->
+            <h3>Les plus populaires</h3>
+            <ul>
+                <li>
+                    <a href="">
+                        <article>
+                            <figure>
+                                <img src="" alt=""/>
+                                <figcaption>
+                                    <h5></h5>
+                                    <p></p>
+                                    <p>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </p>
+                                </figcaption>                                
+                            </figure>
+                        </article>
+                    </a>
+                </li>    
+            </ul>   
+            <ul>
+                <li>
+                    <a href="">
+                        <article>
+                            <figure>
+                                <img src="" alt=""/>
+                                <figcaption>
+                                    <h5></h5>
+                                    <p></p>
+                                    <p>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </p>
+                                </figcaption>                                
+                            </figure>
+                        </article>
+                    </a>
+                </li>    
+            </ul>   
+            <ul>
+                <li>
+                    <a href="">
+                        <article>
+                            <figure>
+                                <img src="" alt=""/>
+                                <figcaption>
+                                    <h5></h5>
+                                    <p></p>
+                                    <p>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </p>
+                                </figcaption>                                
+                            </figure>
+                        </article>
+                    </a>
+                </li>    
+            </ul>        
+        </aside>
+    </div>
+
+    <section class="activites">
+
+
+    </section>
+
+
+
+    <footer class="end"> <!--Footer, 3 listes-->
+        <h5 class="a-propos">A propos</h5>
+        <ul class="propos">
+            <li>Fonctionnement du site</li>
+            <li>Conditions générales de vente</li>
+            <li>Données et confidentialité</li>
+        </ul>
+
+        <h5 class="hebergement">Nos Hébergements</h5>   
+        <ul class="heber">
+            <li>Charte qualité </li>
+            <li>Soumettre votre hôtel</li>
+        </ul>    
+        <h5 class="assistance">Assistance</h5>
+        <ul class="assist">
+            <li>Centre d'aide</li>
+            <li>Nous contacter</li>
+        </ul>
+    </footer>
+
 </body>
 </html>
