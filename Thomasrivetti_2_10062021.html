@@ -1,53 +1,53 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr">    
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomasrivetti Projet 2 Reservia</title>
+    <title>Thomas Rivetti Projet 2 Reservia</title>
 </head>
-<body>
-    
-    <header class="head"><!--Header-->
-        <figure class="logo">
-            <img src="/Projet2-Reservia/images/logo/Reservia@3x.png" alt="logo">
-        </figure>
-        
-        <nav class="navigation"><!--Menu navigation site-->
-            <ul>
-                <li><a href="#">Hébergements</a></li>
-                <li><a href="#"> Activités</a></li>
-            </ul>
-        </nav> 
-        <a href="inscription">S'inscrire</a>
+
+<body>    
+    <!--Header-->
+    <header>
+  <!--Menu navigation site-->
+        <nav>            
+            <img src="/Projet2-Reservia/images/logo/Reservia@3x.png" id="logo" alt="logo">
+                <ul >
+                    <li><a href="#">Hébergements</a></li>
+                    <li><a href="#"> Activités</a></li>
+                </ul>
+            <a href="subscribe" id="sign">S'inscrire</a> 
+        </nav>        
     </header>
-       
-    <div class="main"><!--conteneur principal des sections 1/2/3 et aside--> 
-        
-        <section class="recherche"> <!--section 1 en tête et champ de recherche -->
+    <!--conteneur principal des sections 1/2/3 et aside-->
+    <main id="" >  
+    <!--section 1 en tête et champ de recherche -->
+        <section id="found"> 
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <h4>En plein centre ville ou en pleine nature</h4> 
             
-            <form action="recherche.php" method="post"> <!--champ de recherche-->
-                <input type="search" name="research" id="research">
-                <label for="research"> recherche</label>
+            <form action="search.php" method="post"> <!--champ de recherche-->
+                <input type="search" name="search" id="search">
+                <label for="search"> Rechercher</label>
             </form>
-            
-            <ul class="filtres"><!--les filtres de recherche-->
-                    <li><a href="#">Économique</a></li>
-                    <li><a href="#">Familial</a> </li>
-                    <li><a href="#">Romantique</a></li>
-                    <li><a href="#">Animaux autorisés</a></li>
-                </ul>
+    <!--les filtres de recherche-->
+            <p>Filtres</p>        
+            <ul class="filters">
+                <li><a href="#">Économique</a></li>
+                <li><a href="#">Familial</a> </li>
+                <li><a href="#">Romantique</a></li>
+                <li><a href="#">Animaux autorisés</a></li>
+            </ul>
         
             <small>Plus de 500 logements sont disponibles dans cette ville</small>
         </section>
 
-        <div class="main-content">
-            <section class="hebergement-marseille"><!--section 2 HEBERGEMENT-->
-                <h3>Hébergements à Marseille</h3>
-        
+        <div id="main-content">
+    <!--section 2 HEBERGEMENT-->
+            <section class="marseille">
+                <h2>Hébergements à Marseille</h2>
                 <ul>
                     <li>
                         <a href="">
@@ -179,15 +179,12 @@
                             </article>
                         </a>
                     </li>    
-                </ul>        
-
-                
+                </ul>                       
                 <h3>Affichez plus</h3>
             </section>
-
-            <aside class="populaires"> <!--zone hotels populaires droite-->
-                <h2>Les plus populaires</h2>
-                
+    <!--zone hotels populaires droite-->
+            <aside id="popular"> 
+                <h2>Les plus populaires</h2>               
                 <ul>
                     <li>
                         <a href="">
@@ -256,8 +253,8 @@
                 </ul>        
             </aside>
         </div>
-
-        <section class="activites"> <!--Section 3 -->
+    <!--Section 3 -->
+        <section id="activities"> 
             <h2>Activités à Marseille</h2>
             <ul>
                 <li>
@@ -322,26 +319,26 @@
                 </li>
             </ul>
         </section>
-    </div>
-
-    <footer class="end"> <!--Footer, 3 listes dans des DIV-->
-        <div class="propos">
-            <h4 class="a-propos">A propos</h4>
+    </main>
+    <!--Footer, 3 listes dans des DIV-->
+    <footer id="end"> 
+        <div id="about">
+            <h4>A propos</h4>
             <ul>
                 <li><a href="#">Fonctionnement du site</a></li>
                 <li><a href="#">Conditions générales de vente</a></li>
                 <li><a href="#">Données et confidentialité</a></li>
             </ul>
         </div>
-        <div class="hebergement">
-            <h4 class="heber">Nos Hébergements</h4>   
+        <div id="accommodation">
+            <h4>Nos Hébergements</h4>   
             <ul>
                 <li><a href="#">Charte qualité</a></li>
                 <li><a href="#">Soumettre votre hôtel</a></li>
             </ul>
         </div>
-        <div class="assist">    
-            <h4 class="assistance">Assistance</h4>
+        <div id="assist">    
+            <h4>Assistance</h4>
             <ul>
                 <li><a href="#">Centre d'aide</a></li>
                 <li><a href="#">Nous contacter</a></li>
