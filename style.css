@@ -1,4 +1,4 @@
-/*Police personnalisée*/
+/*FONT RALEWAY*/
 @font-face {
     font-family: 'raleway';
     src: url('fonts/Raleway/Raleway-VariableFont_wght.ttf');
@@ -11,27 +11,62 @@ body {
 /*structure du header*/
 nav{
     display: flex;
+    width: auto;
     align-items: center;
-    border: 1px solid black;
+    justify-content: space-between;
+    border: 2px solid orange;
+}
+#banner {
+    border: rgb(255, 255, 0) 2px solid;
+    display: flex;
     justify-content: space-between;
 }
 #logo {
     border: 1px solid black;
+    width: 95px;
 }
 #sign {
     border: 1px solid black;
-    
+    align-self: center;   
 }
 nav ul { 
     border: 1px solid black;
     display: flex;
     list-style: none;
-    margin: 30px;   
+    margin: 30px;
+    justify-content: flex-end;   
 }
 nav li {
     margin: 0 20px 0 20px;
 }
 /*structure section 1*/
+#found {
+    border: 2px solid red;
+}
 .filters {
     display: flex;
+    align-items: center;
+}
+.filters ul {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+}
+.filters li {
+    margin: 0 20px 0 20px
+}
+small i {
+    color: #0065FC;
+    border-radius: 50% ;
+    border: solid grey 1px;
+    height: 12px;
+    width: 12px;
+    text-align: center;
+    font-weight: normal;
+    margin: 0 0 0 6px;
+    font-size: 10px;  
+}
+#location {
+    display: flex;
+    flex-direction: row-reverse;
 }
