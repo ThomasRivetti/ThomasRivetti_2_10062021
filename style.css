@@ -5,14 +5,11 @@
 }
 /*général*/
 body {
-    font-family: 'raleway', sans-serif;
-    width: auto;
-    height: 1884px;   
+    font-family: 'raleway', sans-serif;   
 }
 li {
     list-style: none;
 }
-
 /*structure du header*/
 nav{
     display: flex;
@@ -80,7 +77,6 @@ small i {
 }
 /*section Hébergement*/
 #accommodation {
-    
     border: 1px solid red;
     display: flex;
     flex-direction: column;    
@@ -123,16 +119,51 @@ small i {
     width: 130px;
     height: 135px;
 }
+
 /*activités*/
 #activities {
     border: red 1px solid;
+    display: flex;
+    flex-direction: column;
+}
+#todo {
+    border: solid 1px blue;
+    display: flex;
+    justify-content: space-around;
+}
+.large {
+    width: 304px;
+    height: 450px;
+}
+.large img {
+    width: 304px;
+    height: 390px;
+}
+.medium {
+    width: 304px;
+    height: 240px;
+}
+.medium img {
+    width: 304px;
+    height: 180px;
+}
+.small {
+    width: 304px;
+    height: 170px;
+}
+.small img {
+    width: 304px;
+    height: 109px;
 }
 
 /*footer*/
-#end {
-    display: flex;
+footer {
     border: 1px green solid;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
 }
-.end {
-   text-align: left;
+.column {
+    border: black 1px solid;
 }
+
