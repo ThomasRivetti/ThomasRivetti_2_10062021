@@ -1,11 +1,16 @@
-/*FONT RALEWAY*/
+/*Font personnalisée*/
 @font-face {
     font-family: 'raleway';
     src: url('fonts/Raleway/Raleway-VariableFont_wght.ttf');
 }
-
+/*général*/
 body {
-    font-family: 'raleway', sans-serif;   
+    font-family: 'raleway', sans-serif;
+    width: auto;
+    height: 1884px;   
+}
+li {
+    list-style: none;
 }
 
 /*structure du header*/
@@ -32,7 +37,6 @@ nav{
 nav ul { 
     border: 1px solid black;
     display: flex;
-    list-style: none;
     margin: 30px;
     justify-content: flex-end;   
 }
@@ -50,7 +54,7 @@ nav li {
 .filters ul {
     display: flex;
     justify-content: left;
-    list-style: none;
+   
 }
 .filters li {
     margin: 0 20px 0 20px
@@ -69,4 +73,66 @@ small i {
 #location {
     display: flex;
     flex-direction: row-reverse;
+}
+/*conteneur section 2 et aside*/
+#main-content {
+    display: flex;
+}
+/*section Hébergement*/
+#accommodation {
+    
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;    
+}
+.marseille {
+    display: flex;
+    justify-content: space-between;
+}
+.marseille ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+        
+}
+.hostel-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;  
+    border: black solid 1px;  
+}
+.hostel-list img{
+    justify-content: flex-start;
+    border: solid 1px blue;
+    width: 240px;
+    height: 115px;    
+}
+/*aside*/
+#popular {
+    
+    border: blue solid 1px; 
+}
+.hostel {
+    display: flex;
+    border: solid 1px black;   
+}
+.hostel img {
+    border: solid 1px blue;
+    justify-content: flex-start;
+    width: 130px;
+    height: 135px;
+}
+/*activités*/
+#activities {
+    border: red 1px solid;
+}
+
+/*footer*/
+#end {
+    display: flex;
+    border: 1px green solid;
+}
+.end {
+   text-align: left;
 }
