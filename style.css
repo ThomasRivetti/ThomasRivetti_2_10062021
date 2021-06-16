@@ -4,6 +4,9 @@
     src: url('fonts/Raleway/Raleway-VariableFont_wght.ttf');
 }
 /*général*/
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'raleway', sans-serif;   
 }
@@ -50,21 +53,24 @@ nav li {
 }
 .filters ul {
     display: flex;
-    justify-content: left;
-   
+    justify-content: left;   
 }
 .filters li {
     margin: 0 20px 0 20px
 }
-small i {
+small span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #0065FC;
     border-radius: 50% ;
     border: solid grey 1px;
-    height: 12px;
-    width: 12px;
+    height: 25px;
+    width: 25px;
     text-align: center;
     font-weight: normal;
     margin: 0 0 0 6px;
+    padding: 2px;
     font-size: 10px;  
 }
 #location {
@@ -88,9 +94,7 @@ small i {
 .marseille ul{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    
-        
+    justify-content: flex-start;       
 }
 .hostel-list {
     display: flex;
@@ -106,7 +110,6 @@ small i {
 }
 /*aside*/
 #popular {
-    
     border: blue solid 1px; 
 }
 .hostel {
@@ -119,7 +122,6 @@ small i {
     width: 130px;
     height: 135px;
 }
-
 /*activités*/
 #activities {
     border: red 1px solid;
@@ -127,35 +129,70 @@ small i {
     flex-direction: column;
 }
 #todo {
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
     display: flex;
-    justify-content: space-around;
-}
-.large {
-    width: 304px;
+    justify-content: space-between;
     height: 450px;
+    gap: 40px;
 }
-.large img {
-    width: 304px;
-    height: 390px;
+#todo > * {
+    flex: 1 1 auto
 }
-.medium {
-    width: 304px;
-    height: 240px;
+#todo a {
+    display: block;
+    height: 100%;
 }
-.medium img {
-    width: 304px;
-    height: 180px;
+#todo > div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
-.small {
-    width: 304px;
-    height: 170px;
+.tierce > * {
+    flex: 1 1 auto;    
 }
-.small img {
-    width: 304px;
-    height: 109px;
+.tierce > *:nth-child(1) {
+    flex: 2 1 auto;
 }
-
+.half > * {
+    flex: 0.9 1 auto;    
+}
+.half > *:nth-child(2) {
+    flex: 1 1 auto;
+}
+.todo1 {
+    background: url(/Projet2-Reservia/images/activites/4_small/Vieux-Port.jpg) no-repeat center center;
+    background-size: cover;    
+}
+#todo article {
+    position: relative;
+}
+#todo article h5 {
+    margin: 0 ;
+    background-color: blanchedalmond;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+.todo2 {
+    background: url(/Projet2-Reservia/images/activites/4_small/Fort-de-Pomegues.jpg) no-repeat center center;
+    background-size: cover;    
+}
+.todo3 {
+    background: url(/Projet2-Reservia/images/activites/4_small/Îles-du-Frioul.jpg) no-repeat center center;
+    background-size: cover;    
+}
+.todo4 {
+    background: url(/Projet2-Reservia/images/activites/4_small/Parc-National-des-Calanques.jpg) no-repeat center center;
+    background-size: cover;    
+}.todo5 {
+    background: url(/Projet2-Reservia/images/activites/4_small/Notre-Dame-de-la-Garde.jpg) no-repeat center center;
+    background-size: cover;    
+}
+.todo6 {
+    background: url(/Projet2-Reservia/images/activites/4_small/Parc-Longchamp.jpg) no-repeat center center;
+    background-size: cover;    
+}
 /*footer*/
 footer {
     border: 1px green solid;
