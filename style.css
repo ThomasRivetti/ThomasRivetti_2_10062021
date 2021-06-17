@@ -166,12 +166,6 @@ small span >i {
 .half > *:nth-child(2) {
     flex: 1 1 auto;
 }
-.todo1 {
-    background: url(/Projet2-Reservia/images/activites/4_small/Vieux-Port.jpg) no-repeat center center;
-    background-size: cover;
-    border-radius: 20px;
-    box-shadow: 6px 6px 5px #f2f2f2;    
-}
 #todo article {
     position: relative;    
 }
@@ -188,31 +182,37 @@ small span >i {
     bottom: 0px;
     width: 100%;    
 }
+.todo1 {
+    background: url(./Projet2-Reservia/images/activites/4_small/Vieux-Port.jpg) no-repeat center center;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 6px 6px 5px #f2f2f2;    
+}
 .todo2 {
-    background: url(/Projet2-Reservia/images/activites/4_small/Fort-de-Pomegues.jpg) no-repeat center center;
+    background: url(./Projet2-Reservia/images/activites/4_small/Fort-de-Pomegues.jpg) no-repeat center center;
     background-size: cover; 
     border-radius: 20px;
     box-shadow: 6px 6px 5px #f2f2f2;   
 }
 .todo3 {
-    background: url(/Projet2-Reservia/images/activites/4_small/Îles-du-Frioul.jpg) no-repeat center center;
+    background: url(./Projet2-Reservia/images/activites/4_small/Îles-du-Frioul.jpg) no-repeat center center;
     background-size: cover;
     border-radius: 20px;
     box-shadow: 6px 6px 5px #f2f2f2;    
 }
 .todo4 {
-    background: url(/Projet2-Reservia/images/activites/4_small/Parc-National-des-Calanques.jpg) no-repeat center center;
+    background: url(./Projet2-Reservia/images/activites/4_small/Parc-National-des-Calanques.jpg) no-repeat center center;
     background-size: cover;
     border-radius: 20px;
     box-shadow: 6px 6px 5px #f2f2f2;    
 }.todo5 {
-    background: url(/Projet2-Reservia/images/activites/4_small/Notre-Dame-de-la-Garde.jpg) no-repeat center center;
+    background: url(./Projet2-Reservia/images/activites/4_small/Notre-Dame-de-la-Garde.jpg) no-repeat center center;
     background-size: cover;
     border-radius: 20px;
     box-shadow: 6px 6px 5px #f2f2f2;    
 }
 .todo6 {
-    background: url(/Projet2-Reservia/images/activites/4_small/Parc-Longchamp.jpg) no-repeat center center;
+    background: url(./Projet2-Reservia/images/activites/4_small/Parc-Longchamp.jpg) no-repeat center center;
     background-size: cover;
     border-radius: 20px;
     box-shadow: 6px 6px 5px #f2f2f2;    
@@ -230,8 +230,8 @@ footer {
     text-align: left;
 }
 .column {
-    /* border: black 1px solid; */
-    padding: 25px 390px 10px 20px;    
+    padding: 40px 0 20px 30px;
+    width: 70%;    
 }
 .column ul {
     padding: 0;
