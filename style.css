@@ -132,7 +132,7 @@ small span >i {
     /* border: red 1px solid; */
     display: flex;
     flex-direction: column;
-    padding-bottom: 30px;
+    padding: 50px 20px;
 }
 #todo {
     /* border: solid 1px blue; */
@@ -224,8 +224,23 @@ footer {
     justify-content: space-between;
     background-color: #f2f2f2;
 }
-.column {
-    border: black 1px solid;
-    padding-top: 25px;
+.column h4 {
+    margin: 0;
+    padding-bottom: 5px;
+    text-align: left;
 }
-
+.column {
+    /* border: black 1px solid; */
+    padding: 25px 390px 10px 20px;    
+}
+.column ul {
+    padding: 0;
+    margin-top: 10px;
+}
+.column a {
+    text-decoration-line: none;
+    color: black;
+}
+.column li {
+    padding: 4px 0;
+}
