@@ -17,8 +17,8 @@
             <img src="/Projet2-Reservia/images/logo/Reservia.svg" id="logo" alt="logo">
             <div id="banner">
                 <ul>
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#"> Activités</a></li>
+                    <li><a href="#accommodation">Hébergements</a></li>
+                    <li><a href="#activities"> Activités</a></li>
                     <li><a href="#" id="sign">S'inscrire</a></li>
                 </ul>              
             </div> 
@@ -32,7 +32,7 @@
             <p>En plein centre ville ou en pleine nature</p> 
             <div> <!--champ de recherche-->                    
                 <form method="post" action="traitement.php">
-                    <p>                       
+                    <p class="search">                       
                         <label for="search"><i class="fas fa-map-marker-alt"></i></label>                
                         <input type="text" name="rechercher" id="search" value="Marseille, France">
                         <input type="submit" value="Rechercher">
@@ -195,7 +195,7 @@
             </section>
     <!--zone hotels populaires droite-->
             <aside id="popular"> 
-                <h2>Les plus populaires</h2>               
+                <h2>Les plus populaires <i class="fas fa-chart-line"></i></h2>              
                 <ul>
                     <li>
                         <a href="#">

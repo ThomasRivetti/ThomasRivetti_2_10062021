@@ -13,6 +13,14 @@ body {
 li {
     list-style: none;
 }
+h1 {
+    color: black;
+    font-size: 22px;
+}
+h2 {
+    color: black;
+    font-size: 20px;
+}
 /*structure du header*/
 nav{
     display: flex;
@@ -47,6 +55,7 @@ nav li {
 /* #found {
     border: 2px solid red; 
 }*/
+}
 .filters {
     display: flex;
     align-items: center;
@@ -88,7 +97,7 @@ small span >i {
 }
 /*section Hébergement*/
 #accommodation {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: flex;
     flex-direction: column;    
 }
@@ -114,9 +123,13 @@ small span >i {
     height: 115px;    
 }
 /*aside*/
-/* #popular {
+#popular {
     border: blue solid 1px; 
-} */
+}
+aside h2 {
+    display: flex;
+    justify-content: space-around;
+}
 .hostel {
     display: flex;
     border: solid 1px black;   
