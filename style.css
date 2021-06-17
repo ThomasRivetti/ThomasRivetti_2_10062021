@@ -19,23 +19,23 @@ nav{
     width: auto;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
 }
 #banner {
-    border: rgb(255, 255, 0) 2px solid;
+    /* border: rgb(255, 255, 0) 2px solid; */
     display: flex;
     justify-content: space-between;
 }
 #logo {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 95px;
 }
 #sign {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     align-self: center;   
 }
 nav ul { 
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     margin: 30px;
     justify-content: flex-end;   
@@ -44,34 +44,39 @@ nav li {
     margin: 0 20px 0 20px;
 }
 /*structure section 1*/
-#found {
-    border: 2px solid red;
+/* #found {
+    border: 2px solid red; */
 }
 .filters {
     display: flex;
     align-items: center;
+    position: relative;
 }
+/* .filters h5 {
+    position:absolute;
+} */
 .filters ul {
     display: flex;
     justify-content: left;   
 }
 .filters li {
-    margin: 0 20px 0 20px
+    margin: 0 10px 0 20px
 }
-small span {
+small span >i {
     display: flex;
     align-items: center;
     justify-content: center;
     color: #0065FC;
     border-radius: 50% ;
     border: solid grey 1px;
-    height: 25px;
-    width: 25px;
+    height: 22px;
+    width: 22px;
     text-align: center;
-    font-weight: normal;
     margin: 0 0 0 6px;
-    padding: 2px;
-    font-size: 10px;  
+    padding: 5px 0 0 0;
+    font-size: 10px;
+    
+      
 }
 #location {
     display: flex;
@@ -83,7 +88,7 @@ small span {
 }
 /*section Hébergement*/
 #accommodation {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;    
 }
@@ -109,9 +114,9 @@ small span {
     height: 115px;    
 }
 /*aside*/
-#popular {
+/* #popular {
     border: blue solid 1px; 
-}
+} */
 .hostel {
     display: flex;
     border: solid 1px black;   
@@ -124,9 +129,10 @@ small span {
 }
 /*activités*/
 #activities {
-    border: red 1px solid;
+    /* border: red 1px solid; */
     display: flex;
     flex-direction: column;
+    padding-bottom: 30px;
 }
 #todo {
     /* border: solid 1px blue; */
@@ -134,9 +140,10 @@ small span {
     justify-content: space-between;
     height: 450px;
     gap: 40px;
+    
 }
 #todo > * {
-    flex: 1 1 auto
+    flex: 1 1 auto;
 }
 #todo a {
     display: block;
@@ -151,7 +158,7 @@ small span {
     flex: 1 1 auto;    
 }
 .tierce > *:nth-child(1) {
-    flex: 2 1 auto;
+    flex: 1.2 1 auto;
 }
 .half > * {
     flex: 0.9 1 auto;    
@@ -161,46 +168,64 @@ small span {
 }
 .todo1 {
     background: url(/Projet2-Reservia/images/activites/4_small/Vieux-Port.jpg) no-repeat center center;
-    background-size: cover;    
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 6px 6px 5px #f2f2f2;    
 }
 #todo article {
-    position: relative;
+    position: relative;    
 }
 #todo article h5 {
-    margin: 0 ;
-    background-color: blanchedalmond;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    padding: 20px;
+    background-color: white;
+    border-radius: 0 0 19px 0;
     position: absolute;
     left: 0px;
     bottom: 0px;
-    width: 100%;
+    width: 100%;    
 }
 .todo2 {
     background: url(/Projet2-Reservia/images/activites/4_small/Fort-de-Pomegues.jpg) no-repeat center center;
-    background-size: cover;    
+    background-size: cover; 
+    border-radius: 20px;
+    box-shadow: 6px 6px 5px #f2f2f2;   
 }
 .todo3 {
     background: url(/Projet2-Reservia/images/activites/4_small/Îles-du-Frioul.jpg) no-repeat center center;
-    background-size: cover;    
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 6px 6px 5px #f2f2f2;    
 }
 .todo4 {
     background: url(/Projet2-Reservia/images/activites/4_small/Parc-National-des-Calanques.jpg) no-repeat center center;
-    background-size: cover;    
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 6px 6px 5px #f2f2f2;    
 }.todo5 {
     background: url(/Projet2-Reservia/images/activites/4_small/Notre-Dame-de-la-Garde.jpg) no-repeat center center;
-    background-size: cover;    
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 6px 6px 5px #f2f2f2;    
 }
 .todo6 {
     background: url(/Projet2-Reservia/images/activites/4_small/Parc-Longchamp.jpg) no-repeat center center;
-    background-size: cover;    
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 6px 6px 5px #f2f2f2;    
 }
 /*footer*/
 footer {
-    border: 1px green solid;
+    /* border: 1px green solid; */
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    background-color: #f2f2f2;
 }
 .column {
     border: black 1px solid;
+    padding-top: 25px;
 }
 
