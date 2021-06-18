@@ -1,79 +1,177 @@
-/*Font personnalisée*/
+/* /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Début de mon CSS personnel*/ 
 @font-face {
     font-family: 'raleway';
-    src: url('fonts/Raleway/Raleway-VariableFont_wght.ttf');
+    src: url(fonts/Raleway/static/Raleway-Medium.ttf);
 }
-/*général*/
 * {
     box-sizing: border-box;
 }
 body {
-    font-family: 'raleway', sans-serif;   
+    font-family: 'raleway';
+    margin: 10px;
 }
-li {
-    list-style: none;
+a {
+    text-decoration: none;
+    color: black;
+}
+h * {
+    font-weight: bold;
+    color: black;
 }
 h1 {
-    color: black;
     font-size: 22px;
 }
 h2 {
-    color: black;
-    font-size: 20px;
+    font-size: 20px;    
 }
-/*structure du header*/
-nav{
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+
+/*header*/
+nav {
     display: flex;
-    width: auto;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    /* border: 2px solid orange; */
-}
-#banner {
-    /* border: rgb(255, 255, 0) 2px solid; */
-    display: flex;
-    justify-content: space-between;
 }
 #logo {
-    /* border: 1px solid black; */
-    width: 95px;
+    width: 120px;
+    padding-left: 20px;
 }
-#sign {
-    /* border: 1px solid black; */
-    align-self: center;   
-}
-nav ul { 
-    /* border: 1px solid black; */
+#banner {
     display: flex;
-    margin: 30px;
-    justify-content: flex-end;   
+    flex: 1 1 auto;
+    justify-content: flex-end;
+    font-size: 16px;
+}
+nav ul{
+    margin: 0 10px;
 }
 nav li {
-    margin: 0 20px 0 20px;
+    padding: 40px 30px 40px 30px;
+    border-top: 2px solid white;
+}
+#banner li:hover {
+    border-top: 2px solid;
+    border-color: #0065fc;
+    font-weight: bold;
+}
+#banner a:hover {
+    color: #0065fc;    
+}
+#sign {
+    color: #0065fc;
+    font-weight: bold;
+    font-size: 16px;
+    padding-right: 20px ;
 }
 /*structure section 1*/
-/* #found {
-    border: 2px solid red; 
-}*/
-
+#found {
+    margin: 30px 0;
+}
+.found {
+    margin: 20px 10px;
+}
 .filters {
     display: flex;
     align-items: center;
-    position: relative;
+    margin: 20px 10px;
+    font-weight: bold;
 }
-/* .filters h5 {
-    position:absolute;
-} */
 .filters ul {
     display: flex;
-    justify-content: left;   
+    justify-content: left;
+    margin-left: 10px;   
 }
 .filters li {
-    margin: 0 10px 0 20px
+    margin: 0 10px 0 20px;
+    padding: 0 20px 0 0px;
+    border: solid 2px #f2f2f2;
+    border-radius: 16% / 50%;
+    font-size: 16px;
 }
-small span >i {
-    display: flex;
+.filters i {
+    /* border: 1px solid white; */
+    background-color: rgb(0, 101, 252, 0.3);
     align-items: center;
+    justify-content: center;
+    padding-top: 8px;
+    color: #0065FC;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+}
+
+#important {
+    margin: 10px 10px;
+    display: block;
+}
+p span >i {
+    display: flex;
+    align-items: flex-end;
     justify-content: center;
     color: #0065FC;
     border-radius: 50% ;
@@ -81,29 +179,29 @@ small span >i {
     height: 22px;
     width: 22px;
     text-align: center;
-    margin: 0 0 0 6px;
+    margin: 0 2px 0 6px;
     padding: 5px 0 0 0;
-    font-size: 10px;
-    
-      
+    font-size: 10px;     
 }
 #location {
     display: flex;
     flex-direction: row-reverse;
 }
-/*conteneur section 2 et aside*/
+
+/*mise en forme de la section hebergement à Marseille et aside les plus populaires*/
 #main-content {
     display: flex;
+    justify-content: space-between;
 }
-/*section Hébergement*/
+/*Hébergement*/
 #accommodation {
-    border: 1px solid red;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    border: #f2f2f2 solid 1px;
 }
 .marseille {
     display: flex;
-    justify-content: space-between;
+    border: #f2f2f2 1px solid;
 }
 .marseille ul{
     display: flex;
@@ -113,121 +211,36 @@ small span >i {
 .hostel-list {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;  
-    border: black solid 1px;  
+    flex-direction: column;
 }
 .hostel-list img{
     justify-content: flex-start;
-    border: solid 1px blue;
     width: 240px;
     height: 115px;    
-}
+} 
 /*aside*/
 #popular {
-    border: blue solid 1px; 
+    border: #f2f2f2 solid 1px; 
 }
 aside h2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .hostel {
     display: flex;
     border: solid 1px black;   
 }
 .hostel img {
-    border: solid 1px blue;
     justify-content: flex-start;
     width: 130px;
     height: 135px;
 }
-/*activités*/
-#activities {
-    /* border: red 1px solid; */
-    display: flex;
-    flex-direction: column;
-    padding: 50px 20px;
-}
-/* .cover {
-    object-fit: cover;
-} */
-#todo article img {
-    width: 100%;
-}
 
-#todo {
-    /* border: solid 1px blue; */
-    display: flex;
-    justify-content: space-between;
-    height: 450px;
-    gap: 40px;   
-}
-#todo > * {
-    flex: 1 1 auto;
-}
-#todo a {
-    display: block;
-    height: 100%;
-}
-#todo > div {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-.tierce > * {
-    flex: 1 1 auto;    
-}
-.tierce > *:nth-child(1) {
-    flex: 1.2 1 auto;
-}
-.half > * {
-    flex: 0.9 1 auto;    
-}
-.half > *:nth-child(2) {
-    flex: 1 1 auto;
-}
-/* #todo article {
-    position: relative;    
-} */
-#todo article h5 {
-    margin: 0;
-    font-size: 16px;
-    font-weight: bold;
-    color: black;
-    padding: 20px;
-    background-color: white;
-    border-radius: 0 0 19px 0;
-    /* position: absolute; */
-    left: 0px;
-    bottom: 0px;
-    width: 100%;    
-}
-.todo1 {
-    border-radius: 20px;
-    box-shadow: 6px 6px 5px #f2f2f2;    
-}
-.todo2 {
-    border-radius: 20px;
-    box-shadow: 6px 6px 5px #f2f2f2;   
-}
-.todo3 {
-    border-radius: 20px;
-    box-shadow: 6px 6px 5px #f2f2f2;    
-}
-.todo4 {
-    border-radius: 20px;
-    box-shadow: 6px 6px 5px #f2f2f2;    
-}
-.todo5 {
-    border-radius: 20px;
-    box-shadow: 6px 6px 5px #f2f2f2;    
-}
-.todo6 {
-    border-radius: 20px;
-    box-shadow: 6px 6px 5px #f2f2f2;    
-}
+
+
+
 /*footer*/
 footer {
-    /* border: 1px green solid; */
     display: flex;
     justify-content: space-between;
     background-color: #f2f2f2;

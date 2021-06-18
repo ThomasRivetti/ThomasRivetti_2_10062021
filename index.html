@@ -15,7 +15,7 @@
     <header>
         <!--Menu navigation site-->
         <nav>
-            <img src="/Projet2-Reservia/images/logo/Reservia.svg" id="logo" alt="logo">
+            <span><img src="/Projet2-Reservia/images/logo/Reservia.svg" id="logo" alt="logo"></span>
             <ul id="banner">
                 <li><a href="#accommodation">Hébergements</a></li>
                 <li><a href="#activities"> Activités</a></li>
@@ -29,8 +29,8 @@
         <section id="found">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-            <div>
-                <!--champ de recherche-->
+            <!--champ de recherche-->
+            <div class="found">    
                 <form method="post" action="traitement.php">
                     <p>
                         <label for="search"><i class="fas fa-map-marker-alt"></i></label>
@@ -44,23 +44,23 @@
                 <h5>Filtres</h5>
                 <ul>
                     <li>
-                        <i class="fas fa-money-bill-wave"></i> Economique
+                        <i class="fas fa-money-bill-wave"></i> Economique 
                     </li>
                     <li>
-                        <i class="fas fa-child"></i> Familial
+                        <i class="fas fa-child"></i> Familial 
                     </li>
                     <li>
-                        <i class="fas fa-heart"></i> Romantique
+                        <i class="fas fa-heart"></i> Romantique 
                     </li>
                     <li>
-                        <i class="fas fa-dog"></i> Animaux autorisés
+                        <i class="fas fa-dog"></i> Animaux autorisés 
                     </li>
                 </ul>
             </div>
-            <small>
+            <p id="important">
                 <span><i class="fas fa-info"></i></span>
                 Plus de 500 logements sont disponibles dans cette ville
-            </small>
+            </p>
         </section>
 
         <div id="main-content">
@@ -197,7 +197,7 @@
                         </li>
                     </ul>
                 </div>
-                <h3>Affichez plus</h3>
+                <h4>Affichez plus</h4>
             </section>
             <!--zone hotels populaires droite-->
             <aside id="popular">
@@ -347,7 +347,7 @@
     <!--Footer, 3 listes dans des DIV-->
     <footer>
         <div class="column">
-            <h4 class="legal">A propos</h4>
+            <h3 class="legal">A propos</h3>
             <ul class="legal">
                 <li><a href="#">Fonctionnement du site</a></li>
                 <li><a href="#">Conditions générales de vente</a></li>
@@ -355,14 +355,14 @@
             </ul>
         </div>
         <div class="column">
-            <h4 class="join">Nos Hébergements</h4>
+            <h3 class="join">Nos Hébergements</h3>
             <ul class="join">
                 <li><a href="#">Charte qualité</a></li>
                 <li><a href="#">Soumettre votre hôtel</a></li>
             </ul>
         </div>
         <div class="column">
-            <h4 class="help">Assistance</h4>
+            <h3 class="help">Assistance</h3>
             <ul class="help">
                 <li><a href="#">Centre d'aide</a></li>
                 <li><a href="#">Nous contacter</a></li>
