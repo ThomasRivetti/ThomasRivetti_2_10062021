@@ -131,6 +131,18 @@ nav li {
 #found {
     margin: 30px 0;
 }
+.found i {
+    border: #f2f2f2 1px solid;
+    border-right: #f2f2f2 4px solid;
+    padding: 10px 12px 10px 12px;
+    background-color: #f2f2f2;
+    border-radius: 10px 0 0 10px;
+}
+/*A REVOIR PB*/
+.field {
+    border: solid #f2f2f2 2px;
+    display: block;
+}
 .found {
     margin: 20px 10px;
 }
