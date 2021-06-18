@@ -2,7 +2,10 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+@font-face {
+    font-family: 'raleway';
+    src: url(fonts/Raleway/static/Raleway-Medium.ttf);
+}
 html, body, div, span, applet, object, iframe,
 p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,10 +58,7 @@ table {
 }
 
 /*Début de mon CSS personnel*/ 
-@font-face {
-    font-family: 'raleway';
-    src: url(fonts/Raleway/static/Raleway-Medium.ttf);
-}
+
 * {
     box-sizing: border-box;
 }
