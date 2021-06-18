@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="fr">    
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
@@ -9,40 +10,39 @@
     <title>Thomas Rivetti Projet 2 Reservia</title>
 </head>
 
-<body>    
+<body>
     <!--Header-->
     <header>
-    <!--Menu navigation site-->
-        <nav>            
+        <!--Menu navigation site-->
+        <nav>
             <img src="/Projet2-Reservia/images/logo/Reservia.svg" id="logo" alt="logo">
-            <div id="banner">
-                <ul>
-                    <li><a href="#accommodation">Hébergements</a></li>
-                    <li><a href="#activities"> Activités</a></li>
-                    <li><a href="#" id="sign">S'inscrire</a></li>
-                </ul>              
-            </div> 
-        </nav>        
+            <ul id="banner">
+                <li><a href="#accommodation">Hébergements</a></li>
+                <li><a href="#activities"> Activités</a></li>
+            </ul>
+            <a href="#" id="sign">S'inscrire</a>
+        </nav>
     </header>
     <!--conteneur principal des sections 1/2/3 et aside-->
-    <main id="main" >  
-    <!--section 1 en tête et champ de recherche -->
-        <section id="found"> 
+    <main id="main">
+        <!--section 1 en tête et champ de recherche -->
+        <section id="found">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p> 
-            <div> <!--champ de recherche-->                    
+            <p>En plein centre ville ou en pleine nature</p>
+            <div>
+                <!--champ de recherche-->
                 <form method="post" action="traitement.php">
-                    <p class="search">                       
-                        <label for="search"><i class="fas fa-map-marker-alt"></i></label>                
+                    <p>
+                        <label for="search"><i class="fas fa-map-marker-alt"></i></label>
                         <input type="text" name="rechercher" id="search" value="Marseille, France">
                         <input type="submit" value="Rechercher">
-                    </p>                    
-                </form>                 
+                    </p>
+                </form>
             </div>
-    <!--les filtres de recherche-->        
+            <!--les filtres de recherche-->
             <div class="filters">
-                <h5>Filtres</h5> 
-                <ul> 
+                <h5>Filtres</h5>
+                <ul>
                     <li>
                         <i class="fas fa-money-bill-wave"></i> Economique
                     </li>
@@ -64,16 +64,17 @@
         </section>
 
         <div id="main-content">
-    <!--section 2 HEBERGEMENT-->
+            <!--section 2 HEBERGEMENT-->
             <section id="accommodation">
                 <h2>Hébergements à Marseille</h2>
-                <div class="marseille"> 
+                <div class="marseille">
                     <ul>
                         <li>
                             <a href="#">
-                                <article >
+                                <article>
                                     <figure class="hostel-list">
-                                        <img src="Projet2-Reservia/images/hebergements/4_small/cannebiere.jpg" alt="Auberge la Cannebière"/>
+                                        <img src="Projet2-Reservia/images/hebergements/4_small/cannebiere.jpg"
+                                            alt="Auberge la Cannebière" />
                                         <figcaption>
                                             <h5>Auberge la Cannebière</h5>
                                             <p>Nuit à partir de 25€</p>
@@ -84,16 +85,17 @@
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
                                             </p>
-                                        </figcaption>                                
+                                        </figcaption>
                                     </figure>
                                 </article>
                             </a>
-                        </li>                        
+                        </li>
                         <li>
                             <a href="#">
-                                <article >
+                                <article>
                                     <figure class="hostel-list">
-                                        <img src="Projet2-Reservia/images/hebergements/4_small/port.jpg" alt="Hôtel du port"/>
+                                        <img src="Projet2-Reservia/images/hebergements/4_small/port.jpg"
+                                            alt="Hôtel du port" />
                                         <figcaption>
                                             <h5>Hôtel du port</h5>
                                             <p>Nuit à partir de 52€</p>
@@ -104,16 +106,17 @@
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
                                             </p>
-                                        </figcaption>                                
+                                        </figcaption>
                                     </figure>
                                 </article>
                             </a>
-                        </li>                                              
+                        </li>
                         <li>
                             <a href="#">
                                 <article>
                                     <figure class="hostel-list">
-                                        <img src="Projet2-Reservia/images/hebergements/4_small/mouettes.jpg" alt="Hôtel Les mouettes"/>
+                                        <img src="Projet2-Reservia/images/hebergements/4_small/mouettes.jpg"
+                                            alt="Hôtel Les mouettes" />
                                         <figcaption>
                                             <h5>Hôtel Les mouettes</h5>
                                             <p>Nuit à partir de 76€</p>
@@ -124,16 +127,17 @@
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
                                             </p>
-                                        </figcaption>                                
+                                        </figcaption>
                                     </figure>
                                 </article>
                             </a>
-                        </li>                                       
+                        </li>
                         <li>
                             <a href="#">
                                 <article>
                                     <figure class="hostel-list">
-                                        <img src="Projet2-Reservia/images/hebergements/4_small/hotel_mer.jpg" alt="Hôtel de la mer"/>
+                                        <img src="Projet2-Reservia/images/hebergements/4_small/hotel_mer.jpg"
+                                            alt="Hôtel de la mer" />
                                         <figcaption>
                                             <h5>Hôtel de la mer</h5>
                                             <p>Nuit à partir de 46€</p>
@@ -144,16 +148,17 @@
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
                                             </p>
-                                        </figcaption>                                
+                                        </figcaption>
                                     </figure>
                                 </article>
                             </a>
-                        </li>                                           
+                        </li>
                         <li>
                             <a href="#">
                                 <article>
                                     <figure class="hostel-list">
-                                        <img src="Projet2-Reservia/images/hebergements/4_small/panier.jpg" alt="Auberge Le Panier"/>
+                                        <img src="Projet2-Reservia/images/hebergements/4_small/panier.jpg"
+                                            alt="Auberge Le Panier" />
                                         <figcaption>
                                             <h5>Auberge Le Panier</h5>
                                             <p>Nuit à partir de 23€</p>
@@ -164,16 +169,17 @@
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
                                             </p>
-                                        </figcaption>                                
+                                        </figcaption>
                                     </figure>
                                 </article>
                             </a>
-                        </li>                                            
+                        </li>
                         <li>
                             <a href="#">
                                 <article>
                                     <figure class="hostel-list">
-                                        <img src="Projet2-Reservia/images/hebergements/4_small/amina.jpg" alt="Hôtel chez Amina"/>
+                                        <img src="Projet2-Reservia/images/hebergements/4_small/amina.jpg"
+                                            alt="Hôtel chez Amina" />
                                         <figcaption>
                                             <h5>Hôtel chez Amina</h5>
                                             <p>Nuit à partir de 96€</p>
@@ -184,24 +190,25 @@
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
                                             </p>
-                                        </figcaption>                                
+                                        </figcaption>
                                     </figure>
                                 </article>
                             </a>
-                        </li>    
+                        </li>
                     </ul>
-                </div>                       
+                </div>
                 <h3>Affichez plus</h3>
             </section>
-    <!--zone hotels populaires droite-->
-            <aside id="popular"> 
-                <h2>Les plus populaires <i class="fas fa-chart-line"></i></h2>              
+            <!--zone hotels populaires droite-->
+            <aside id="popular">
+                <h2>Les plus populaires <i class="fas fa-chart-line"></i></h2>
                 <ul>
                     <li>
                         <a href="#">
-                            <article >
+                            <article>
                                 <figure class="hostel">
-                                    <img src="Projet2-Reservia/images/hebergements/4_small/soleil_matin.jpg" alt="Hôtel Le soleil du matin"/>
+                                    <img src="Projet2-Reservia/images/hebergements/4_small/soleil_matin.jpg"
+                                        alt="Hôtel Le soleil du matin" />
                                     <figcaption>
                                         <h5>Hôtel Le soleil du matin</h5>
                                         <p>Nuit à partir de 128€</p>
@@ -212,18 +219,19 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                         </p>
-                                    </figcaption>                                
+                                    </figcaption>
                                 </figure>
                             </article>
                         </a>
-                    </li>    
-                </ul>   
+                    </li>
+                </ul>
                 <ul>
                     <li>
                         <a href="#">
                             <article>
                                 <figure class="hostel">
-                                    <img src="Projet2-Reservia/images/hebergements/4_small/coeur_eau.jpg" alt="Au coeur de l'eau Chambres d'hôtes"/>
+                                    <img src="Projet2-Reservia/images/hebergements/4_small/coeur_eau.jpg"
+                                        alt="Au coeur de l'eau Chambres d'hôtes" />
                                     <figcaption>
                                         <h5>Au coeur de l'eau Chambres d'hôtes</h5>
                                         <p>Nuit à partir de 71€</p>
@@ -234,18 +242,19 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                         </p>
-                                    </figcaption>                                
+                                    </figcaption>
                                 </figure>
                             </article>
                         </a>
-                    </li>    
-                </ul>   
+                    </li>
+                </ul>
                 <ul>
                     <li>
                         <a href="#">
                             <article>
                                 <figure class="hostel">
-                                    <img src="Projet2-Reservia/images/hebergements/4_small/tout_bleu_blanc.jpg" alt="Hôtel Tout bleu et Blanc"/>
+                                    <img src="Projet2-Reservia/images/hebergements/4_small/tout_bleu_blanc.jpg"
+                                        alt="Hôtel Tout bleu et Blanc" />
                                     <figcaption>
                                         <h5>Hôtel Tout bleu et Blanc</h5>
                                         <p>Nuit à partir de 68€</p>
@@ -256,57 +265,63 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                         </p>
-                                    </figcaption>                                
+                                    </figcaption>
                                 </figure>
                             </article>
                         </a>
-                    </li>    
-                </ul>        
+                    </li>
+                </ul>
             </aside>
         </div>
-    <!--Section 3 -->
-        <section id="activities"> 
+        <!--Section 3 -->
+        <section id="activities">
             <h2>Activités à Marseille</h2>
             <div id="todo">
                 <article class="full">
-                    <a href="#" class="todo1">                        
-                        <h5>Vieux Port</h5>                         
+                    <a href="#" class="todo1">
+                        <img src="./Projet2-Reservia/images/activites/4_small/Vieux-Port.jpg" alt="Vieux Port">
+                        <h5>Vieux Port</h5>
                     </a>
                 </article>
                 <div class="tierce">
                     <article class="medium">
                         <a href="#" class="todo2">
-                            <h5>Fort de Pomègues</h5>                            
+                            <img src="./Projet2-Reservia/images/activites/4_small/Fort-de-Pomegues.jpg" alt="Fort de Pomègues">
+                            <h5>Fort de Pomègues</h5>
                         </a>
-                    </article>            
+                    </article>
                     <article class="small">
                         <a href="#" class="todo3">
+                            <img src="./Projet2-Reservia/images/activites/4_small/Îles-du-Frioul.jpg" alt="Îles du Frioul">
                             <h5>Îles du Frioul</h5>
-                        </a>                                                       
-                    </article>            
+                        </a>
+                    </article>
                 </div>
                 <article class="full">
                     <a href="#" class="todo4">
+                        <img src="./Projet2-Reservia/images/activites/4_small/Parc-National-des-Calanques.jpg" alt="Parc National des Calanques">
                         <h5>Parc National des Calanques</h5>
-                    </a>                            
-                </article>                     
-                <div class="half">   
+                    </a>
+                </article>
+                <div class="half">
                     <article class="small">
                         <a href="#" class="todo5">
-                            <h5>Notre-Dame-de-la-Garde</h5> 
-                        </a>                           
-                    </article>            
+                            <img src="./Projet2-Reservia/images/activites/4_small/Notre-Dame-de-la-Garde.jpg" alt="Notre-Dame-de-la-Garde">
+                            <h5>Notre-Dame-de-la-Garde</h5>
+                        </a>
+                    </article>
                     <article class="medium">
                         <a href="#" class="todo6">
+                            <img src="./Projet2-Reservia/images/activites/4_small/Parc-Longchamp.jpg" alt="Parc Longchamps">
                             <h5>Parc Longchamp</h5>
-                        </a>                               
+                        </a>
                     </article>
                 </div>
-            </div>                           
+            </div>
         </section>
     </main>
     <!--Footer, 3 listes dans des DIV-->
-    <footer> 
+    <footer>
         <div class="column">
             <h4 class="legal">A propos</h4>
             <ul class="legal">
@@ -316,13 +331,13 @@
             </ul>
         </div>
         <div class="column">
-            <h4 class="join">Nos Hébergements</h4>   
+            <h4 class="join">Nos Hébergements</h4>
             <ul class="join">
                 <li><a href="#">Charte qualité</a></li>
                 <li><a href="#">Soumettre votre hôtel</a></li>
             </ul>
         </div>
-        <div class="column">    
+        <div class="column">
             <h4 class="help">Assistance</h4>
             <ul class="help">
                 <li><a href="#">Centre d'aide</a></li>
@@ -331,4 +346,5 @@
         </div>
     </footer>
 </body>
+
 </html>

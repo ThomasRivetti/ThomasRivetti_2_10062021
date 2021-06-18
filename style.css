@@ -55,7 +55,7 @@ nav li {
 /* #found {
     border: 2px solid red; 
 }*/
-}
+
 .filters {
     display: flex;
     align-items: center;
@@ -152,8 +152,7 @@ aside h2 {
     display: flex;
     justify-content: space-between;
     height: 450px;
-    gap: 40px;
-    
+    gap: 40px;   
 }
 #todo > * {
     flex: 1 1 auto;
@@ -196,37 +195,37 @@ aside h2 {
     width: 100%;    
 }
 .todo1 {
-    background: url(./Projet2-Reservia/images/activites/4_small/Vieux-Port.jpg) no-repeat center center;
-    background-size: cover;
+    /* background: url(./Projet2-Reservia/images/activites/4_small/Vieux-Port.jpg) no-repeat center center;
+    background-size: cover; */
     border-radius: 20px;
     box-shadow: 6px 6px 5px #f2f2f2;    
 }
 .todo2 {
-    background: url(./Projet2-Reservia/images/activites/4_small/Fort-de-Pomegues.jpg) no-repeat center center;
-    background-size: cover; 
+    /* background: url(./Projet2-Reservia/images/activites/4_small/Fort-de-Pomegues.jpg) no-repeat center center;
+    background-size: cover;  */
     border-radius: 20px;
     box-shadow: 6px 6px 5px #f2f2f2;   
 }
 .todo3 {
-    background: url(./Projet2-Reservia/images/activites/4_small/Îles-du-Frioul.jpg) no-repeat center center;
-    background-size: cover;
+    /* background: url(./Projet2-Reservia/images/activites/4_small/Îles-du-Frioul.jpg) no-repeat center center;
+    background-size: cover; */
     border-radius: 20px;
     box-shadow: 6px 6px 5px #f2f2f2;    
 }
 .todo4 {
-    background: url(./Projet2-Reservia/images/activites/4_small/Parc-National-des-Calanques.jpg) no-repeat center center;
-    background-size: cover;
+    /* background: url(./Projet2-Reservia/images/activites/4_small/Parc-National-des-Calanques.jpg) no-repeat center center;
+    background-size: cover; */
     border-radius: 20px;
     box-shadow: 6px 6px 5px #f2f2f2;    
 }.todo5 {
-    background: url(./Projet2-Reservia/images/activites/4_small/Notre-Dame-de-la-Garde.jpg) no-repeat center center;
-    background-size: cover;
+    /* background: url(./Projet2-Reservia/images/activites/4_small/Notre-Dame-de-la-Garde.jpg) no-repeat center center;
+    background-size: cover; */
     border-radius: 20px;
     box-shadow: 6px 6px 5px #f2f2f2;    
 }
 .todo6 {
-    background: url(./Projet2-Reservia/images/activites/4_small/Parc-Longchamp.jpg) no-repeat center center;
-    background-size: cover;
+    /* background: url(./Projet2-Reservia/images/activites/4_small/Parc-Longchamp.jpg) no-repeat center center;
+    background-size: cover; */
     border-radius: 20px;
     box-shadow: 6px 6px 5px #f2f2f2;    
 }
