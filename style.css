@@ -109,11 +109,18 @@ nav ul{
     margin: 0 10px;
 }
 nav li {
-    padding: 40px 30px 40px 30px;
-    border-top: 2px solid white;
-}
+    padding: 40px 30px;
+    border-top: 4px solid white;
+} 
+/*essai nav dynamique*/  
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all 0.5s;
+}    
+
 #banner li:hover {
-    border-top: 2px solid;
+    border-top: 4px solid;
     border-color: #0065fc;
     font-weight: bold;
 }
