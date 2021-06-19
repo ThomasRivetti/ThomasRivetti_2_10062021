@@ -64,7 +64,6 @@ table {
 }
 body {
     font-family: 'raleway';
-    margin: 10px;
 }
 a {
     text-decoration: none;
@@ -95,10 +94,10 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0 20px;
 }
 #logo {
     width: 120px;
-    padding-left: 20px;
 }
 #banner {
     display: flex;
@@ -129,7 +128,7 @@ nav li {
 }
 /*structure section 1*/
 #found {
-    margin: 30px 0;
+    margin: 30px 20px;
 }
 .found i {
     border: #f2f2f2 1px solid;
@@ -165,7 +164,6 @@ nav li {
     font-size: 16px;
 }
 .filters i {
-    /* border: 1px solid white; */
     background-color: rgb(0, 101, 252, 0.3);
     align-items: center;
     justify-content: center;
@@ -176,7 +174,6 @@ nav li {
     width: 35px;
     text-align: center;
 }
-
 #important {
     margin: 10px 10px;
     display: block;
@@ -203,22 +200,35 @@ p span >i {
 /*mise en forme de la section hebergement à Marseille et aside les plus populaires*/
 #main-content {
     display: flex;
-    justify-content: space-between;
+    margin:20px;
+    gap: 40px;
+}
+#main-content #accommodation {
+    flex: 2 1 auto;
+}
+#main-content #popular {
+    flex: 1 1 auto;
 }
 /*Hébergement*/
 #accommodation {
     display: flex;
     flex-direction: column;
     border: #f2f2f2 solid 1px;
+    background-color: #f2f2f2;
+    padding: 50px 40px;
+    border-radius: 25px;
 }
 .marseille {
     display: flex;
     border: #f2f2f2 1px solid;
+    padding: 20px 0;
+    
 }
 .marseille ul{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;       
+    justify-content: flex-start;
+         
 }
 .hostel-list {
     display: flex;
@@ -232,7 +242,10 @@ p span >i {
 } 
 /*aside*/
 #popular {
-    border: #f2f2f2 solid 1px; 
+    border: #f2f2f2 solid 1px;
+    background-color: #f2f2f2;
+    padding: 50px 40px;
+    border-radius: 25px; 
 }
 aside h2 {
     display: flex;
@@ -248,9 +261,14 @@ aside h2 {
     height: 135px;
 }
 
-
-
-
+/*Activités*/
+#activities {
+    margin:20px;
+}
+#todo {
+    display: flex;
+    flex: 1 1 auto;
+}
 /*footer*/
 footer {
     display: flex;
