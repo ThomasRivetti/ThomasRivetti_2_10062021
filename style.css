@@ -142,7 +142,7 @@ nav ul li a:before {
 .found i {
     border: #f2f2f2 1px solid;
     border-right: #f2f2f2 4px solid;
-    padding: 10px 12px 10px 12px;
+    padding: 10px 8px 10px 12px;
     background-color: #f2f2f2;
     border-radius: 10px 0 0 10px;
 }
@@ -151,8 +151,23 @@ nav ul li a:before {
 }
 /*A REVOIR PB*/
 .field {
-    border: solid #f2f2f2 2px;
-    display: block;
+    display: flex;
+    font-family: 'raleway';
+    font-weight: bold;
+    font-size: 13px;
+}
+.field input {
+    border: #f2f2f2 2px solid;
+    border-left: none;
+    border-right: none;
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+.field #button{
+    background-color: #0065FC;
+    color: white;
+    padding: 0 10px;
+    border-radius: 0 10px 10px 0 ;
 }
 .found {
     margin: 20px 10px;
@@ -172,14 +187,14 @@ nav ul li a:before {
     margin: 0 10px 0 20px;
     padding: 0 20px 0 0px;
     border: solid 2px #f2f2f2;
-    border-radius: 16% / 50%;
+    border-radius: 17% / 50%;
     font-size: 13px;
 }
 .filters i {
     background-color: rgb(0, 101, 252, 0.3);
     align-items: center;
     justify-content: center;
-    padding-top: 8px;
+    padding-top: 10px;
     color: #0065FC;
     border-radius: 50%;
     height: 35px;
@@ -209,8 +224,7 @@ p span >i {
     flex-direction: row-reverse;
 }
 button {
-    display: flex;
-    
+    display: flex;  
 }
 
 /*mise en forme de la section hebergement à Marseille et aside les plus populaires*/
@@ -230,7 +244,7 @@ button {
     background-color: #f2f2f2;
     margin: 0 37px 0 50px;
     border-radius: 25px;
-    max-width: 880px;
+    /* max-width: 880px; */
 }
 #accommodation h2 {
     margin-left: 40px ;
@@ -325,12 +339,24 @@ figcaption p {
 }
 
 /*Activités*/
-#activities {
-    margin:20px;
-}
-#todo {
+.activities{
+    border: red 1px solid;
     display: flex;
-    flex: 1 1 auto;
+    flex-direction: column;
+}
+.main-todo {
+    display: flex;
+}
+.main-todo article {
+    border: black solid 1px;
+}
+.main-todo img {
+    width: 305px;
+    object-fit: cover;
+}
+.main-todo figure{
+    display: flex;
+    flex-direction: column;
 }
 /*footer*/
 footer {
