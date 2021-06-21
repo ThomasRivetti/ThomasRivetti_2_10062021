@@ -274,7 +274,7 @@ button {
     color: #f2f2f2;
 }
 button {
-    width: fit-content;
+    width: 11%;
     margin: 25px 0 0 44px;
     border: none;
     font-family: 'raleway';
@@ -308,7 +308,13 @@ aside h2 {
       
 }
 figcaption {
-    margin: 4px;
+    margin: 19px 53px 0 21px;
+}
+figcaption p {
+    margin-top:  5px;
+}
+.star {
+    margin-top: 45px;
 }
 .hostel img {
     justify-content: flex-start;
