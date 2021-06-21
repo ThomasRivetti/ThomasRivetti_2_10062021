@@ -360,12 +360,24 @@ figcaption p {
     border: black solid 1px;
 }
 .main-todo img {
-    width: 305px;
+    width: 100%;
     object-fit: cover;
 }
 .main-todo figure{
     display: flex;
     flex-direction: column;
+}
+.todo1 img {
+    height: 180px;
+}
+.todo2 img {
+    height: 109px;
+}
+.todo3 img{
+    height: 140px;
+}
+.todo4 img {
+    height: 155px;
 }
 /*footer*/
 footer {
@@ -374,7 +386,8 @@ footer {
 }
 footer .wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap:40px;
 }
 .column h4 {
     margin: 0;
@@ -382,8 +395,8 @@ footer .wrapper {
     text-align: left;
 }
 .column {
-    padding: 40px 0 20px 30px;
-    width: 70%;    
+    padding: 40px 0 20px 0;
+    flex-basis: 70%;
 }
 .column ul {
     padding: 0;
