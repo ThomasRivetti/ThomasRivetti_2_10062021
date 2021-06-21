@@ -74,21 +74,23 @@ h * {
     color: black;
 }
 h1 {
-    font-size: 22px;
-}
-h2 {
-    font-size: 20px;    
-}
-h3 {
-    font-size: 18px;
-}
-h4 {
     font-size: 16px;
 }
-h5 {
-    font-size: 14px;
+h2 {
+    font-size: 16px;    
 }
-
+h3 {
+    font-size: 13px;
+}
+h4 {
+    font-size: 12px;
+}
+h5 {
+    font-size: 12px;
+}
+p {
+    font-size: 10px;
+}
 /*header*/
 nav {
     display: flex;
@@ -144,6 +146,9 @@ nav ul li a:before {
     background-color: #f2f2f2;
     border-radius: 10px 0 0 10px;
 }
+#found p {
+    font-size: 12px;
+}
 /*A REVOIR PB*/
 .field {
     border: solid #f2f2f2 2px;
@@ -168,7 +173,7 @@ nav ul li a:before {
     padding: 0 20px 0 0px;
     border: solid 2px #f2f2f2;
     border-radius: 16% / 50%;
-    font-size: 16px;
+    font-size: 13px;
 }
 .filters i {
     background-color: rgb(0, 101, 252, 0.3);
@@ -211,9 +216,10 @@ button {
 /*mise en forme de la section hebergement à Marseille et aside les plus populaires*/
 #main-content {
     display: flex;
+    align-content: flex-start;
 }
 #main-content h2 {
-    margin:47px 0 28px 0;
+    margin:45px 0 0 0;
 }
 
 /*Hébergement*/
@@ -224,21 +230,23 @@ button {
     background-color: #f2f2f2;
     margin: 0 37px 0 50px;
     border-radius: 25px;
-    min-width: 66%;
+    max-width: 880px;
 }
 #accommodation h2 {
     margin-left: 40px ;
 }
+
 .marseille {
     display: flex;
     border: #f2f2f2 1px solid;
-    margin: 0 40px;
+    justify-content:space-between
     
 }
 .marseille ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0 10px;
 }
 .hostel-list h5 {
     margin: 3px 0;
@@ -248,9 +256,9 @@ button {
     flex-wrap: wrap;
     flex-direction: column;
     border: white 5px solid;
-    border-radius: 20px ;
+    border-radius: 25px ;
     background-color: white;
-    margin: 0 30px 30px 0;
+    margin: 15px;
 }
 .hostel-list img{
     justify-content: flex-start;
@@ -265,26 +273,39 @@ button {
 .fa-star.grey {
     color: #f2f2f2;
 }
-
+button {
+    width: fit-content;
+    margin: 25px 0 0 44px;
+    border: none;
+    font-family: 'raleway';
+    font-size: 13px;
+    font-weight: bold;
+}
+button:hover {
+    color: #0065FC;
+}
 /*aside*/
 #popular {
     border: #f2f2f2 solid 1px;
     background-color: #f2f2f2;
-    padding: 0 40px 0 37px;
+    padding: 0 37px 0 40px;
     margin: 0 50px 0 0px;
-    border-radius: 25px; 
+    border-radius: 25px;
+    min-width: 420px; 
 }
 aside h2 {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 13px;
 }
 .hostel {
     display: flex;
     border: solid 1px black; 
     border: white 5px solid;
-    border-radius: 20px ;
+    border-radius: 25px ;
     background-color: white;
-    margin: 0 0 30px  0;  
+    margin: 0 0 30px 0;
+      
 }
 figcaption {
     margin: 4px;
@@ -310,6 +331,7 @@ footer {
     display: flex;
     justify-content: space-between;
     background-color: #f2f2f2;
+    font-size: 12px;
 }
 .column h4 {
     margin: 0;
