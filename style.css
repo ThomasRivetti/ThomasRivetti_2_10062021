@@ -91,12 +91,18 @@ h5 {
 p {
     font-size: 10px;
 }
+main, header, .wrapper {
+    max-width: 1340px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*header*/
 nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 20px;
+    
 }
 #logo {
     width: 120px;
@@ -110,9 +116,12 @@ nav {
 nav ul{
     margin: 0 10px;
 }
-nav li {
-    padding: 40px 30px;
-    border-top: 4px solid white;
+nav li a{
+    display: block;
+    padding: 40px 30px 0;
+    margin-bottom: 40px;
+    border-top: 4px solid transparent;
+    
 } 
 /*essai nav dynamique*/  
 nav ul li a,
@@ -121,7 +130,7 @@ nav ul li a:before {
     transition: all 0.5s;
 }    
 
-#banner li:hover {
+#banner li a:hover {
     border-top: 4px solid;
     border-color: #0065fc;
     font-weight: bold;
@@ -137,7 +146,7 @@ nav ul li a:before {
 }
 /*structure section 1*/
 #found {
-    margin: 30px 20px;
+    margin: 30px 0;
 }
 .found i {
     border: #f2f2f2 1px solid;
@@ -160,7 +169,7 @@ nav ul li a:before {
     border: #f2f2f2 2px solid;
     border-left: none;
     border-right: none;
-    padding: 0 0 0 10px;
+    padding-left: 10px;
     margin: 0;
 }
 .field #button{
@@ -170,22 +179,23 @@ nav ul li a:before {
     border-radius: 0 10px 10px 0 ;
 }
 .found {
-    margin: 20px 10px;
+    margin: 20px 0;
 }
 .filters {
     display: flex;
     align-items: center;
-    margin: 20px 10px;
+    margin: 20px 0;
     font-weight: bold;
 }
 .filters ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: left;
     margin-left: 10px;   
 }
 .filters li {
     margin: 0 10px 0 20px;
-    padding: 0 20px 0 0px;
+    padding-right: 20px ;
     border: solid 2px #f2f2f2;
     border-radius: 17% / 50%;
     font-size: 13px;
@@ -202,7 +212,7 @@ nav ul li a:before {
     text-align: center;
 }
 #important {
-    margin: 10px 10px;
+    margin: 10px 10px 10px 0;
     display: block;
 }
 p span >i {
@@ -215,8 +225,8 @@ p span >i {
     height: 22px;
     width: 22px;
     text-align: center;
-    margin: 0 2px 0 6px;
-    padding: 5px 0 0 0;
+    margin-right: 2px;
+    padding-top: 5px ;
     font-size: 10px;     
 }
 #location {
@@ -242,7 +252,7 @@ button {
     flex-direction: column;
     border: #f2f2f2 solid 1px;
     background-color: #f2f2f2;
-    margin: 0 37px 0 50px;
+    margin-right: 37px;
     border-radius: 25px;
     /* max-width: 880px; */
 }
@@ -303,7 +313,6 @@ button:hover {
     border: #f2f2f2 solid 1px;
     background-color: #f2f2f2;
     padding: 0 37px 0 40px;
-    margin: 0 50px 0 0px;
     border-radius: 25px;
     min-width: 420px; 
 }
@@ -360,10 +369,12 @@ figcaption p {
 }
 /*footer*/
 footer {
-    display: flex;
-    justify-content: space-between;
     background-color: #f2f2f2;
     font-size: 12px;
+}
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 .column h4 {
     margin: 0;
