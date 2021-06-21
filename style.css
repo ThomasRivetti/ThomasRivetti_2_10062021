@@ -201,7 +201,7 @@ nav ul li a:before {
     font-size: 13px;
 }
 .filters i {
-    background-color: rgb(0, 101, 252, 0.3);
+    background-color: #deebff;
     align-items: center;
     justify-content: center;
     padding-top: 10px;
@@ -243,34 +243,32 @@ button {
     align-content: flex-start;
 }
 #main-content h2 {
-    margin:45px 0 0 0;
+    margin-bottom: 25px;
 }
 
 /*Hébergement*/
 #accommodation {
     display: flex;
     flex-direction: column;
-    border: #f2f2f2 solid 1px;
+    /* border: #f2f2f2 solid 1px; */
     background-color: #f2f2f2;
-    margin-right: 37px;
+    padding: 40px;
+    margin-right: 40px;
     border-radius: 25px;
     /* max-width: 880px; */
 }
-#accommodation h2 {
-    margin-left: 40px ;
-}
-
 .marseille {
     display: flex;
-    border: #f2f2f2 1px solid;
+    /* border: #f2f2f2 1px solid; */
     justify-content:space-between
     
 }
 .marseille ul{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 10px;
+    gap: 25px;
+    /* justify-content: space-between; */
+    /* padding: 0 10px; */
 }
 .hostel-list h5 {
     margin: 3px 0;
@@ -279,10 +277,10 @@ button {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    border: white 5px solid;
+    padding: 5px;
     border-radius: 25px ;
     background-color: white;
-    margin: 15px;
+    box-shadow: 6px 6px 5px rgba(0,0,0,0.1 );    
 }
 .hostel-list img{
     justify-content: flex-start;
@@ -291,6 +289,12 @@ button {
     height: 115px;
     object-fit: cover;
 } 
+.hostel-list figcaption{
+    padding: 10px 10px 5px;
+}
+.stars {
+    padding-top: 8px;
+}
 .fa-star { 
     color: #0065FC;
 }
@@ -298,8 +302,7 @@ button {
     color: #f2f2f2;
 }
 button {
-    width: 11%;
-    margin: 25px 0 0 44px;
+    margin-top: 45px ;
     border: none;
     font-family: 'raleway';
     font-size: 13px;
@@ -312,7 +315,7 @@ button:hover {
 #popular {
     border: #f2f2f2 solid 1px;
     background-color: #f2f2f2;
-    padding: 0 37px 0 40px;
+    padding: 40px;
     border-radius: 25px;
     min-width: 420px; 
 }
@@ -321,23 +324,28 @@ aside h2 {
     justify-content: space-between;
     padding-bottom: 13px;
 }
+aside h5 {
+    padding-bottom: 10px;
+}
 .hostel {
     display: flex;
     border: solid 1px black; 
     border: white 5px solid;
     border-radius: 25px ;
     background-color: white;
-    margin: 0 0 30px 0;
-      
+    margin-bottom: 30px;
+    box-shadow: 6px 6px 5px rgba(0,0,0,0.1 );      
 }
-figcaption {
+.hostel figcaption {
     margin: 19px 53px 0 21px;
+    display: flex;
+    flex-direction: column;
 }
-figcaption p {
-    margin-top:  5px;
+.aside-stars {
+    margin-top: auto;
 }
-.star {
-    margin-top: 45px;
+#popular li:last-child figure {
+    margin-bottom: 0;
 }
 .hostel img {
     justify-content: flex-start;
@@ -349,19 +357,36 @@ figcaption p {
 
 /*Activités*/
 .activities{
-    border: red 1px solid;
+    /* border: red 1px solid; */
     display: flex;
     flex-direction: column;
+    margin: 65px 0 60px 0;
+}
+.activities h2{
+    margin-bottom: 25px;
 }
 .main-todo {
     display: flex;
+    gap: 40px;
+}
+.main-todo h4{
+    padding: 20px;
+
+}
+.half {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 .main-todo article {
-    border: black solid 1px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 5px rgba(0,0,0,0.1);
+    overflow: hidden; 
 }
 .main-todo img {
     width: 100%;
     object-fit: cover;
+    height: 390px;
 }
 .main-todo figure{
     display: flex;
