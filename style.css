@@ -26,7 +26,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font: inherit;
 	vertical-align: baseline;
 }
 h1, h2, h3, h4, h5, h6{
@@ -86,7 +85,7 @@ h2 {
 h3 {
     font-size: 1.3rem;
 }
-h4 {
+h4, .fa-star {
     font-size: 1.2rem;
 }
 
@@ -297,6 +296,7 @@ p span >i {
 }
 .hostel-list h5 {
     margin: 3px 0;
+    padding-bottom: 5px;
 }
 .hostel-list {
     display: flex;
@@ -360,12 +360,12 @@ aside h2 {
 }
 .hostel figcaption {
     margin-bottom: auto;
-    padding-left: 10px;
+    padding: 20px 0 0 20px;
     display: flex;
     flex-direction: column;
 }
 .aside-stars {
-    padding-top: 30px;
+    margin-top: 45px;
 }
 #popular li:last-child figure {
     margin-bottom: 0;
