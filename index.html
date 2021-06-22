@@ -15,12 +15,12 @@
     <header>
         <!--Menu navigation site-->
         <nav>
-            <span><img src="./images/logo/Reservia.svg" id="logo" alt="logo"></span>
+            <img src="./images/logo/Reservia.svg" id="logo" alt="logo">
             <ul id="banner">
-                <li><a href="#accommodation">Hébergements</a></li>
-                <li><a href="#activities"> Activités</a></li>
+                <li><a href="#accommodation" class="nav">Hébergements</a></li>
+                <li><a href="#activities" class="nav"> Activités</a></li>
+                <li><a href="#" id="sign" title="Inscription">S'inscrire</a></li>
             </ul>
-            <a href="#" id="sign">S'inscrire</a>
         </nav>
     </header>
     <!--conteneur principal des sections 1/2/3 et aside-->
@@ -44,27 +44,27 @@
                 <h3>Filtres</h3>
                 <ul>
                     <li>
-                        <button>
+                        <button class="filter-eco">
                             <i class="fas fa-money-bill-wave"></i> 
-                            <p>Economique </p> 
+                            <p>Economique</p> 
                         </button>
                     </li>
                     <li>
-                        <button>
+                        <button class="filter-family">
                             <i class="fas fa-child"></i> 
-                            <p> Familial </p>
+                            <p>Familial</p>
                         </button>
                     </li>
                     <li>
-                        <button>
+                        <button class="filter-love">
                             <i class="fas fa-heart"></i>
-                            <p> Romantique </p>
+                            <p>Romantique</p>
                         </button>
                     </li>
                     <li>
-                        <button>
+                        <button class="filter-pet">
                             <i class="fas fa-dog"></i>
-                            <p> Animaux autorisés</p> 
+                            <p>Animaux autorisés</p> 
                         </button>
                     </li>
                 </ul>
@@ -213,7 +213,7 @@
             </section>
             <!--zone hotels populaires droite-->
             <aside id="popular">
-                <h2>Les plus populaires <i class="fas fa-chart-line"></i></h2>
+                <h2>Les plus populaires<i class="fas fa-chart-line"></i></h2>
                 <ul>
                     <li>                        
                         <article>

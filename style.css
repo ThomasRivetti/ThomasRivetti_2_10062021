@@ -74,22 +74,22 @@ h * {
     color: black;
 }
 h1 {
-    font-size: 16px;
+    font-size: 1em;
 }
 h2 {
-    font-size: 16px;    
+    font-size: 1em;    
 }
 h3 {
-    font-size: 13px;
+    font-size: 0.9em;
 }
 h4 {
-    font-size: 12px;
+    font-size: 0.8em;
 }
 h5 {
-    font-size: 12px;
+    font-size: 0.7em;
 }
 p {
-    font-size: 10px;
+    font-size: 0.6em;
 }
 main, header, .wrapper {
     max-width: 1340px;
@@ -99,6 +99,7 @@ main, header, .wrapper {
 }
 button:hover {
     color: #0065FC;
+    cursor: pointer;
 }
 /*header*/
 nav {
@@ -113,7 +114,7 @@ nav {
     display: flex;
     flex: 1 1 auto;
     justify-content: flex-end;
-    font-size: 16px;
+    font-size: 1em;
 }
 nav ul{
     margin: 0 10px;
@@ -126,13 +127,13 @@ nav li a{
 } 
 
 /*essai nav dynamique*/  
-nav ul li a,
+/* nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
-    transition: all 0.5s;
-}    
+    transition: all 0.3s;
+}     */
 
-#banner li a:hover {
+#banner li .nav:hover {
     border-top: 4px solid;
     border-color: #0065fc;
     font-weight: bold;
@@ -143,9 +144,10 @@ nav ul li a:before {
 #sign {
     color: #0065fc;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1em;
     padding-right: 20px ;
 }
+
 /*structure section 1*/
 #found {
     margin: 30px 0;
@@ -158,13 +160,13 @@ nav ul li a:before {
     border-radius: 10px 0 0 10px;
 }
 #found p {
-    font-size: 12px;
+    font-size: 0.9em;
 }
 .field {
     display: flex;
     font-family: 'raleway';
     font-weight: bold;
-    font-size: 13px;
+    font-size: 0.8em;
 }
 .field input {
     border: #f2f2f2 2px solid;
@@ -179,6 +181,10 @@ nav ul li a:before {
     padding: 0 10px;
     border-radius: 0 10px 10px 0;
     border: #0065fc 2px solid;
+}
+.field #button:hover{
+    cursor: pointer;
+    font-weight: bold;
 }
 .found {
     margin: 20px 0;
@@ -217,7 +223,7 @@ nav ul li a:before {
 #found button {
     display: flex;
     font-family: 'raleway';
-    font-size: 13px;
+    font-size: 0.9em;
     font-weight: bold;
     border-radius: 25px;
     border: solid 1px #f2f2f2;
@@ -250,7 +256,7 @@ p span >i {
     text-align: center;
     margin-right: 2px;
     padding-top: 5px ;
-    font-size: 10px;     
+    font-size: 0.7em;     
 }
 #location {
     display: flex;
@@ -313,7 +319,7 @@ p span >i {
     color: #0065FC;
 }
 .fa-star.grey {
-    color: #f2f2f2;
+    color: #d9d9d9;
 }
 #accommodation button {
     display: flex;
@@ -321,7 +327,7 @@ p span >i {
     border: none;
     background-color: #f2f2f2;
     font-family: 'raleway';
-    font-size: 13px;
+    font-size: 0.7em;
     font-weight: bold;
 }
 
@@ -419,7 +425,7 @@ aside h5 {
 /*footer*/
 footer {
     background-color: #f2f2f2;
-    font-size: 12px;
+    font-size: 0.7em;
 }
 footer .wrapper {
     display: flex;
@@ -445,4 +451,9 @@ footer .wrapper {
 }
 .column li {
     padding: 4px 0;
+}
+
+/*responsive mobile*/
+@media screen and (max-width:980px) {
+    
 }
