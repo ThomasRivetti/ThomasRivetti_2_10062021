@@ -38,9 +38,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
+body, p {
 	line-height: 1.5;
+    font-family: 'raleway', sans-serif;
 }
+input {font-family: 'raleway';}
 ol, ul {
 	list-style: none;
 }
@@ -61,9 +63,6 @@ table {
 
 * {
     box-sizing: border-box;
-}
-body {
-    font-family: 'raleway';
 }
 a {
     text-decoration: none;
@@ -184,7 +183,10 @@ nav ul li a:before {
 }
 .field #button:hover{
     cursor: pointer;
-    font-weight: bold;
+    color: #0065FC;
+    background-color: #f2f2f2;
+    border: #f2f2f2 2px solid;
+
 }
 .found {
     margin: 20px 0;
@@ -454,6 +456,11 @@ footer .wrapper {
 }
 
 /*responsive mobile*/
-@media screen and (max-width:980px) {
+@media screen and (max-width:340px) {
+    /*header*/
+
+
+
+
     
 }
