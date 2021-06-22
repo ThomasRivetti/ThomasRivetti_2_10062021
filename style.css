@@ -97,6 +97,9 @@ main, header, .wrapper {
     margin-left: auto;
     margin-right: auto;
 }
+button:hover {
+    color: #0065FC;
+}
 /*header*/
 nav {
     display: flex;
@@ -213,7 +216,8 @@ nav ul li a:before {
     width: 35px;
     text-align: center;
 } 
-button {
+#found button {
+    display: flex;
     font-family: 'raleway';
     font-size: 13px;
     font-weight: bold;
@@ -229,7 +233,7 @@ button {
     padding: 0;
     align-items: center;          
 }
-button p {
+#found button p {
     padding: 0 20px 0 5px;
 }
 #important {
@@ -253,9 +257,6 @@ p span >i {
 #location {
     display: flex;
     flex-direction: row-reverse;
-}
-button {
-    display: flex;  
 }
 
 /*mise en forme de la section hebergement à Marseille et aside les plus populaires*/
@@ -323,15 +324,15 @@ button {
     color: #f2f2f2;
 }
 #accommodation button {
-    margin-top: 45px ;
+    display: flex;
+    margin: 45px 700px 0 0;
     border: none;
+    background-color: #f2f2f2;
     font-family: 'raleway';
     font-size: 13px;
     font-weight: bold;
 }
-button:hover {
-    color: #0065FC;
-}
+
 /*aside*/
 #popular {
     border: #f2f2f2 solid 1px;
