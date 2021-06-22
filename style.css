@@ -239,8 +239,9 @@ nav ul li a:before {
     padding: 0;
     align-items: center;          
 }
-#found button p {
+#found button span{
     padding: 0 20px 0 5px;
+    display: flex;
 }
 #important {
     margin: 10px 10px 10px 0;
@@ -378,12 +379,12 @@ aside h5 {
 }
 
 /*Activités*/
-.activities{
+#activities{
     display: flex;
     flex-direction: column;
     margin: 65px 0 60px 0;
 }
-.activities h2{
+#activities h2{
     margin-bottom: 25px;
 }
 .main-todo {
