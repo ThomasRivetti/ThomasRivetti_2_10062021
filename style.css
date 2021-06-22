@@ -158,7 +158,7 @@ nav ul li a:before {
 #found p {
     font-size: 12px;
 }
-/*A REVOIR PB*/
+
 .field {
     display: flex;
     font-family: 'raleway';
@@ -167,16 +167,17 @@ nav ul li a:before {
 }
 .field input {
     border: #f2f2f2 2px solid;
-    border-left: none;
-    border-right: none;
+    border-right: white;
     padding-left: 10px;
     margin: 0;
+    border-radius: 0;
 }
 .field #button{
     background-color: #0065FC;
     color: white;
     padding: 0 10px;
-    border-radius: 0 10px 10px 0 ;
+    border-radius: 0 10px 10px 0;
+    border: #0065fc 2px solid;
 }
 .found {
     margin: 20px 0;
@@ -194,11 +195,12 @@ nav ul li a:before {
     margin-left: 10px;   
 }
 .filters li {
+    display: flex;
     margin: 0 10px 0 20px;
     padding-right: 20px ;
-    border: solid 2px #f2f2f2;
-    border-radius: 17% / 50%;
-    font-size: 13px;
+    display: flex;
+    align-items: center;
+    text-align: center;    
 }
 .filters i {
     background-color: #deebff;
@@ -210,6 +212,25 @@ nav ul li a:before {
     height: 35px;
     width: 35px;
     text-align: center;
+} 
+button {
+    font-family: 'raleway';
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 25px;
+    border: solid 1px #f2f2f2;
+    border-left: none; 
+    background-color: white;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    padding: 0;
+    align-items: center;          
+}
+button p {
+    padding: 0 20px 0 5px;
 }
 #important {
     margin: 10px 10px 10px 0;
@@ -301,7 +322,7 @@ button {
 .fa-star.grey {
     color: #f2f2f2;
 }
-button {
+#accommodation button {
     margin-top: 45px ;
     border: none;
     font-family: 'raleway';
