@@ -72,12 +72,13 @@ a {
 p {
     font-size: 1rem;
 }
-h * {
+/* h {
     font-weight: bold;
     color: black;
-}
+} */
 h1 {
     font-size: 1.6rem;
+
 }
 h2 {
     font-size: 1.6rem;    
@@ -87,6 +88,8 @@ h3 {
 }
 h4, .fa-star {
     font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
 }
 
 
@@ -350,22 +353,21 @@ aside h2 {
     padding-bottom: 13px;
 }
 .hostel {
-    display: flex;
-    border: solid 1px black; 
+    display: flex; 
     border: white 5px solid;
     border-radius: 25px ;
     background-color: white;
     margin-bottom: 30px;
-    box-shadow: 6px 6px 5px rgba(0,0,0,0.1 );      
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1 );      
 }
 .hostel figcaption {
-    margin-bottom: auto;
-    padding: 20px 0 0 20px;
+    padding: 20px 55px 0 20px;
     display: flex;
     flex-direction: column;
+    margin-bottom:auto
 }
-.aside-stars {
-    margin-top: 45px;
+.hostel .aside-stars {
+    margin-top: 45px ;
 }
 #popular li:last-child figure {
     margin-bottom: 0;
