@@ -459,11 +459,30 @@ footer .wrapper {
 }
 
 /*responsive mobile*/
-@media screen and (max-width:820px) {
+@media screen and (max-width:338px) {
     main, header, .wrapper {
         width: auto;
         flex: none;        
     }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #logo {
+        order:1;
+    }
+    #sign {
+        order: 2;
+    }
+    #banner {
+        order: 3;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+
+    
     #main-content {
         flex-direction: column-reverse;
         width: 100%;
