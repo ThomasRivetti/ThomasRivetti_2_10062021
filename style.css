@@ -275,6 +275,9 @@ p span >i {
     display: flex;
     align-content: flex-start;
 }
+#main-content:first-child {
+    flex: 1 1 auto;
+}
 #main-content h2 {
     margin-bottom: 25px;
 }
@@ -341,11 +344,13 @@ p span >i {
 
 /*aside*/
 #popular {
+    display: flex;
+    flex-direction: column;
     border: #f2f2f2 solid 1px;
     background-color: #f2f2f2;
     padding: 40px;
     border-radius: 25px;
-    min-width: 420px; 
+    /* /* min-width: 420px;*/
 }
 aside h2 {
     display: flex;
