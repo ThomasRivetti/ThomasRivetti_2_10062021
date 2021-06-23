@@ -459,12 +459,44 @@ footer .wrapper {
 }
 
 /*responsive mobile*/
-@media screen and (max-width:340px) {
+@media screen and (max-width:820px) {
     main, header, .wrapper {
         width: auto;
+        flex: none;        
     }
-
-
+    #main-content {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    #popular {
+        width: 100%;
+        padding: 10px;
+        background-color: #f2f2f2;
+        border-radius: 0;
+    }
+    #accommodation {
+        padding: 10px;
+        margin: 0;
+        width: 100%;
+        background:none;
+    }
+    .marseille li{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .marseille img {
+        width: auto;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+        padding: 20px;
+    }
+    .column {
+        padding: 0;
+    }
 
 
     
