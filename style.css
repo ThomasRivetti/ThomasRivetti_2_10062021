@@ -123,12 +123,12 @@ nav li a{
     border-top: 4px solid transparent;
 } 
 
-#banner li .nav:hover {
+#banner li .nav:hover, :focus {
     border-top: 4px solid;
     border-color: #0065fc;
     font-weight: bold;
 }
-#banner a:hover {
+#banner a:hover, :focus {
     color: #0065fc;    
 }
 #sign {
@@ -491,18 +491,16 @@ footer .wrapper {
     }
     /*design nav*/
     nav li a{
-        display: block;
         padding:  40px 40px 20px 40px;
         margin-bottom: 40px;
         border-bottom: 4px solid #f2f2f2;
-    } 
-    
-    #banner li .nav:hover {
-        border-bottom: 4px solid;
-        border-color: #0065fc;
+    }
+    #banner li .nav:hover,:focus {
+        border: none;
+        border-bottom: 4px solid#0065fc;
         font-weight: bold;
     }
-    #banner a:hover {
+    #banner a:hover, :focus {
         color: #0065fc;    
     }
     /*section1*/
