@@ -502,7 +502,12 @@ footer .wrapper {
         margin: 5px;
     }
     #found {
-        margin: 0 20px;
+        margin: 20px;
+        width: auto;
+    }
+    .field {
+        display: flex;
+        width: auto;
     }
     .subtitle {
         font-size: 1.4rem;
