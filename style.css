@@ -123,13 +123,6 @@ nav li a{
     border-top: 4px solid transparent;
 } 
 
-/*essai nav dynamique*/  
-/* nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-    transition: all 0.3s;
-}     */
-
 #banner li .nav:hover {
     border-top: 4px solid;
     border-color: #0065fc;
@@ -150,7 +143,7 @@ nav ul li a:before {
     margin: 30px 0;
 }
 .found i {
-    border: #f2f2f2 1px solid;
+    border: #f2f2f2 2px solid;
     border-right: #f2f2f2 4px solid;
     padding: 10px 8px 10px 12px;
     background-color: #f2f2f2;
@@ -495,6 +488,22 @@ footer .wrapper {
         order: 3;
         width: 100%;
         justify-content: space-around;
+    }
+    /*design nav*/
+    nav li a{
+        display: block;
+        padding:  40px 40px 20px 40px;
+        margin-bottom: 40px;
+        border-bottom: 4px solid #f2f2f2;
+    } 
+    
+    #banner li .nav:hover {
+        border-bottom: 4px solid;
+        border-color: #0065fc;
+        font-weight: bold;
+    }
+    #banner a:hover {
+        color: #0065fc;    
     }
     /*section1*/
     .filters {
