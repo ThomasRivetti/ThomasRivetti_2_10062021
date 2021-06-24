@@ -156,9 +156,9 @@ nav ul li a:before {
     background-color: #f2f2f2;
     border-radius: 10px 0 0 10px;
 }
-#found p {
+.subtitle {
     font-size: 1.6rem;
-}
+} 
 .field {
     display: flex;
     font-family: 'raleway';
@@ -176,7 +176,6 @@ nav ul li a:before {
 .field #button{
     background-color: #0065FC;
     color: white;
-    padding: 8px 10px;
     border-radius: 0 10px 10px 0;
     border: #0065fc 2px solid;
 }
@@ -272,7 +271,6 @@ p span >i {
     border-radius: 12px;
     border: none;
 }
-
 #location {
     display: flex;
     flex-direction: row-reverse;
@@ -509,16 +507,28 @@ footer .wrapper {
     }
     .filters ul{
         flex-wrap: wrap;
+        margin-left: 0;
     }
     .filters li {
         margin: 5px;
     
     }
-    #button {
-        display: none;
-    } 
+    #found {
+        margin: 0 20px;
+    }
+    .subtitle {
+        font-size: 1.4rem;
+    }
     #found .fa-search {
         display: flex;
+    }
+    #important {
+        display: flex;
+        gap: 5px;
+        /* margin-left: 10px; */
+    }
+    #important p {
+        font-size: 1rem;
     }
     /*section 2 et aside*/  
     #main-content {
