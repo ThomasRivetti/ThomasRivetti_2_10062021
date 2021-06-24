@@ -61,7 +61,6 @@ table {
 }
 
 /*Début de mon CSS personnel*/ 
-
 * {
     box-sizing: border-box;
 }
@@ -72,10 +71,6 @@ a {
 p {
     font-size: 1.3rem;
 }
-/* h {
-    font-weight: bold;
-    color: black;
-} */
 h1 {
     font-size: 2rem;
 
@@ -181,7 +176,7 @@ nav ul li a:before {
 .field #button{
     background-color: #0065FC;
     color: white;
-    padding: 0 10px;
+    padding: 8px 10px;
     border-radius: 0 10px 10px 0;
     border: #0065fc 2px solid;
 }
@@ -252,6 +247,7 @@ nav ul li a:before {
     margin: 10px 10px 10px 0;
     display: block;
 }
+/*INFOS*/
 p span >i {
     display: flex;
     align-items: flex-end;
@@ -270,7 +266,7 @@ p span >i {
     color: black;
 }
 #found .fa-search {
-    /* display: none; */
+    display: none;
     background-color: #0065FC;
     color: white;
     border-radius: 12px;
@@ -521,7 +517,7 @@ footer .wrapper {
     #button {
         display: none;
     } 
-    .fa-search {
+    #found .fa-search {
         display: flex;
     }
     /*section 2 et aside*/  
