@@ -9,7 +9,6 @@
 html{
     font-size: 62.5% ;
 }
-
 html, body, div, span, applet, object, iframe,
 p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -59,7 +58,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 /*Début de mon CSS personnel*/ 
 * {
     box-sizing: border-box;
@@ -86,8 +84,6 @@ h4, .fa-star {
     font-weight: bold;
     color: black;
 }
-
-
 main, header, .wrapper {
     max-width: 1340px;
     width: 100%;
@@ -121,8 +117,7 @@ nav li a{
     padding: 40px 30px 0;
     margin-bottom: 40px;
     border-top: 4px solid transparent;
-} 
-
+}
 #banner li .nav:hover, :focus {
     border-top: 4px solid;
     border-color: #0065fc;
@@ -137,7 +132,6 @@ nav li a{
     font-size: 1.6rem;
     padding-right: 20px ;
 }
-
 /*structure section 1*/
 #found {
     margin: 30px 0;
@@ -177,7 +171,6 @@ nav li a{
     color: #0065FC;
     background-color: #f2f2f2;
     border: #f2f2f2 2px solid;
-
 }
 .found {
     margin: 20px 0;
@@ -232,8 +225,7 @@ nav li a{
 }
 #found button span{
     padding: 0 15px 0 5px;
-    display: flex;
-    
+    display: flex;  
 }
 #important {
     margin: 10px 10px 10px 0;
@@ -268,7 +260,6 @@ p span >i {
     display: flex;
     flex-direction: row-reverse;
 }
-
 /*mise en forme de la section hebergement à Marseille et aside les plus populaires*/
 #main-content {
     display: flex;
@@ -276,11 +267,9 @@ p span >i {
     align-content: flex-start;
     gap: 40px
 }
-
 #main-content h2 {
     margin-bottom: 25px;
 }
-
 /*Hébergement*/
 #accommodation {
     display: flex;
@@ -340,7 +329,6 @@ p span >i {
     font-size: 1.6rem;
     font-weight: bold;
 }
-
 /*aside*/
 #popular {
     display: flex;
@@ -349,7 +337,6 @@ p span >i {
     background-color: #f2f2f2;
     padding: 40px;
     border-radius: 25px;
-    /* /* min-width: 420px;*/
 }
 aside h2 {
     display: flex;
@@ -384,7 +371,6 @@ aside h2 {
     height: 135px;
     object-fit: cover;
 }
-
 /*Activités*/
 #activities{
     display: flex;
@@ -469,7 +455,6 @@ footer .wrapper {
     main, header, .wrapper {
         width: auto;
         flex: none;
-
     }
     /*header*/
     nav {
@@ -515,7 +500,6 @@ footer .wrapper {
     }
     .filters li {
         margin: 5px;
-    
     }
     #found {
         margin: 0 20px;
@@ -528,12 +512,10 @@ footer .wrapper {
     }
     #found #button span{
         display: none;
-    }
-    
+    }    
     #important {
         display: flex;
         gap: 5px;
-        /* margin-left: 10px; */
     }
     #important p {
         font-size: 1rem;
@@ -563,9 +545,6 @@ footer .wrapper {
     .marseille img {
         width: auto;
     }
-    /* #popular img {
-        
-    } */
     /*activités*/
     #activities {
         margin: 10px;
@@ -585,9 +564,5 @@ footer .wrapper {
     }
     .column {
         padding: 0;
-    }
-    
-
-
-    
+    }    
 }
