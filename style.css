@@ -70,24 +70,24 @@ a {
     color: black;
 }
 p {
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 /* h {
     font-weight: bold;
     color: black;
 } */
 h1 {
-    font-size: 1.6rem;
+    font-size: 2rem;
 
 }
 h2 {
-    font-size: 1.6rem;    
+    font-size: 2rem;    
 }
 h3 {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 }
 h4, .fa-star {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: bold;
     color: black;
 }
@@ -116,7 +116,7 @@ nav {
     display: flex;
     flex: 1 1 auto;
     justify-content: flex-end;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 nav ul{
     margin: 0 10px;
@@ -146,7 +146,7 @@ nav ul li a:before {
 #sign {
     color: #0065fc;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     padding-right: 20px ;
 }
 
@@ -162,13 +162,13 @@ nav ul li a:before {
     border-radius: 10px 0 0 10px;
 }
 #found p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 .field {
     display: flex;
     font-family: 'raleway';
     font-weight: bold;
-    font-size:1.3rem;
+    font-size:1.6rem;
 }
 .field input {
     border: #f2f2f2 2px solid;
@@ -176,6 +176,7 @@ nav ul li a:before {
     padding-left: 10px;
     margin: 0;
     border-radius: 0;
+    font-size: 1.6rem;
 }
 .field #button{
     background-color: #0065FC;
@@ -198,6 +199,7 @@ nav ul li a:before {
     display: flex;
     align-items: center;
     margin: 20px 0;
+    font-size: 2rem;
     font-weight: bold;
 }
 .filters ul {
@@ -240,7 +242,7 @@ nav ul li a:before {
     cursor: pointer;
     padding: 0;
     align-items: center;
-    font-size: 1.3rem;          
+    font-size: 1.6rem;          
 }
 #found button span{
     padding: 0 20px 0 5px;
@@ -263,7 +265,7 @@ p span >i {
     text-align: center;
     margin-right: 2px;
     padding-top: 5px ;
-    font-size: 0.7rem;
+    font-size: 1rem;
 }
 #location {
     display: flex;
@@ -273,11 +275,11 @@ p span >i {
 /*mise en forme de la section hebergement à Marseille et aside les plus populaires*/
 #main-content {
     display: flex;
+    flex-flow: row nowrap;
     align-content: flex-start;
+    gap: 40px
 }
-#main-content:first-child {
-    flex: 1 1 auto;
-}
+
 #main-content h2 {
     margin-bottom: 25px;
 }
@@ -288,12 +290,12 @@ p span >i {
     flex-direction: column;
     background-color: #f2f2f2;
     padding: 40px;
-    margin-right: 40px;
+    max-width: 880px;
+    /* margin-right: 40px; */
     border-radius: 25px;
 }
 .marseille {
     display: flex;
-    justify-content:space-between
 }
 .marseille ul{
     display: flex;
@@ -334,11 +336,11 @@ p span >i {
 }
 #accommodation button {
     display: flex;
-    margin: 45px 665px 0 0;
+    margin-top: 45px;
     border: none;
     background-color: #f2f2f2;
     font-family: 'raleway';
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
@@ -366,7 +368,7 @@ aside h2 {
     box-shadow: 5px 5px 5px rgba(0,0,0,0.1 );      
 }
 .hostel figcaption {
-    padding: 20px 55px 0 20px;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     margin-bottom:auto
@@ -454,6 +456,7 @@ footer .wrapper {
 .column ul {
     padding: 0;
     margin-top: 10px;
+    font-size: 1.3rem;
 }
 .column a {
     text-decoration-line: none;
