@@ -211,7 +211,6 @@ nav ul li a:before {
 .filters li {
     display: flex;
     margin: 0 10px 0 20px;
-    padding-right: 20px ;
     display: flex;
     align-items: center;
     text-align: center;    
@@ -245,7 +244,7 @@ nav ul li a:before {
     font-size: 1.6rem;          
 }
 #found button span{
-    padding: 0 20px 0 5px;
+    padding: 0 15px 0 5px;
     display: flex;
     
 }
@@ -267,6 +266,17 @@ p span >i {
     padding-top: 5px ;
     font-size: 1rem;
 }
+#search {
+    color: black;
+}
+#found .fa-search {
+    /* display: none; */
+    background-color: #0065FC;
+    color: white;
+    border-radius: 12px;
+    border: none;
+}
+
 #location {
     display: flex;
     flex-direction: row-reverse;
@@ -371,10 +381,11 @@ aside h2 {
     padding: 0 20px;
     display: flex;
     flex-direction: column;
-    margin-bottom:auto
+    min-height: 100%;
+    flex-grow: 1;
 }
 .hostel .aside-stars {
-    margin-top: 45px ;
+    margin-top: auto ;
 }
 #popular li:last-child figure {
     margin-bottom: 0;
@@ -470,8 +481,10 @@ footer .wrapper {
 @media screen and (max-width:338px) {
     main, header, .wrapper {
         width: auto;
-        flex: none;        
+        flex: none;
+
     }
+    /*header*/
     nav {
         display: flex;
         flex-wrap: wrap;
@@ -488,9 +501,30 @@ footer .wrapper {
         width: 100%;
         justify-content: space-around;
     }
-
-
+    /*section1*/
+    .filters {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .filters h3 {
+        margin-left: 20px;
+        
+    }
+    .filters ul{
+        flex-wrap: wrap;
+    }
+    .filters li {
+        margin: 5px;
     
+    }
+    #button {
+        display: none;
+    } 
+    .fa-search {
+        display: flex;
+    }
+    /*section 2 et aside*/  
     #main-content {
         flex-direction: column-reverse;
         width: 100%;
@@ -515,6 +549,20 @@ footer .wrapper {
     .marseille img {
         width: auto;
     }
+    /* #popular img {
+        
+    } */
+    /*activités*/
+    #activities {
+        margin: 10px;
+    }
+    .main-todo {
+        flex-direction: column;
+    }
+    .block img{
+        height: 170px;
+    }
+    /*footer*/
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -524,6 +572,7 @@ footer .wrapper {
     .column {
         padding: 0;
     }
+    
 
 
     
