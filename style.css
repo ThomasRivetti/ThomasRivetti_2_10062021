@@ -96,11 +96,13 @@ button:hover {
     color: #0065FC;
     cursor: pointer;
 }
-header, 
-#found, 
-#activities, 
-footer {
-    padding: 0 20px;
+@media screen and (max-width: 1380px){
+    header, 
+    #found, 
+    #activities, 
+    footer {
+        padding: 0 20px;
+    }
 }
 /*header*/
 nav {
@@ -126,19 +128,18 @@ nav li a{
     margin-bottom: 40px;
     border-top: 4px solid transparent;
 }
-#banner li .nav:hover, :focus {
+#banner li .nav:hover, #banner li .nav:focus {
     border-top: 4px solid;
     border-color: #0065fc;
     font-weight: bold;
 }
-#banner a:hover, :focus {
+#banner a:hover, #banner a:focus {
     color: #0065fc;    
 }
 #sign {
     color: #0065fc;
     font-weight: bold;
     font-size: 1.6rem;
-    padding-right: 20px ;
 }
 /*structure section 1*/
 #found {
@@ -285,7 +286,7 @@ p span >i {
     background-color: #f2f2f2;
     padding: 40px;
     max-width: 880px;
-    margin-left: 20px;
+    
     border-radius: 25px;
 }
 .marseille {
@@ -304,8 +305,6 @@ p span >i {
         flex: 1 1 calc(50% - 25px);
     }
 }
-    
-}
 .hostel-list h5 {
     margin: 3px 0;
     padding-bottom: 5px;
@@ -314,6 +313,7 @@ p span >i {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    min-height: 100%;
     padding: 5px;
     border-radius: 25px ;
     background-color: white;
@@ -323,7 +323,7 @@ p span >i {
     display: block;
 }
 .marseille article, .marseille a {
-    min-height: 100%;
+    height: 100%;
 }
 .hostel-list img{
     justify-content: flex-start;
@@ -361,7 +361,7 @@ p span >i {
     background-color: #f2f2f2;
     padding: 40px;
     border-radius: 25px;
-    margin-right: 20px;
+    
 }
 aside h2 {
     display: flex;
@@ -393,7 +393,7 @@ aside h2 {
     justify-content: flex-start;
     border-radius: 20px 0 0 20px ;
     width: 130px;
-    height: 135px;
+    height: 130px; 
     object-fit: cover;
 }
 /*Activités*/
@@ -482,6 +482,9 @@ footer .wrapper {
         flex: none;
     }
     /*header*/
+    header {
+        padding: 0;
+    }
     nav {
         display: flex;
         flex-wrap: wrap;
@@ -493,6 +496,7 @@ footer .wrapper {
     }
     #sign {
         order: 2;
+        margin-right: 20px;
     }
     #banner {
         order: 3;
@@ -568,18 +572,21 @@ footer .wrapper {
     }
     #popular {
         width: 100%;
-        padding: 10px;
+        padding: 20px;
         background-color: #f2f2f2;
         border-radius: 0;
     }
     #accommodation {
-        padding: 10px;
+        padding: 20px;
         margin: 0;
         width: 100%;
         background:none;
     }
     #accommodation button {
         background-color: white;
+    }
+    .marseille ul li{
+        flex: 1 1 100%;
     }
     .marseille li{
         width: 100%;
@@ -590,9 +597,6 @@ footer .wrapper {
         width: auto;
     }
     /*activités*/
-    #activities {
-        margin: 10px;
-    }
     .main-todo {
         flex-direction: column;
     }
@@ -603,8 +607,7 @@ footer .wrapper {
     .wrapper {
         display: flex;
         flex-direction: column;
-        margin-left: 25px;
-        padding: 20px;
+        padding: 40px 0;
     }
     .column {
         padding: 0;
@@ -616,10 +619,10 @@ footer .wrapper {
     body {
         width:100%
     }
-    header {
-        padding: 0 30px;
+    nav ul li a {
+        padding: 40px 20px 0 ;
     }
-    /*section 1*/
+        /*section 1*/
     #found h1, p, #important{
         text-align: center;
     }
@@ -668,9 +671,12 @@ footer .wrapper {
         padding: 10px 10px 20px 10px;
         border-radius: 0;
         width: 100%;
+        margin-right: 0;
     }
     #popular h2 {
         margin-bottom: 0;
+        width: 90%;
+        margin: 10px auto;
     }
     #popular ul{
         display: flex;
@@ -681,27 +687,23 @@ footer .wrapper {
     #popular ul li {
         width: 100%;
     }
-    #popular .hostel {
-        display: flex;
-        flex-direction: column;
-        height: 230px;
-        text-align :center; 
-
-    }
     .hostel {
         margin: 10px auto;
         width: 90%;
     }  
     .hostel figcaption {
         min-height: auto;
-    padding: 0;
+        padding: 10px;
+        text-align: center;
     } 
-    .hostel figcaption >p  {
+    .hostel figcaption .aside-stars {
         margin-top: auto;
     }
     .hostel img {
-        width: 100%;
-        border-radius: 20px 20px 0 0;
+        width: 40%;
+        height: 100%;
+        max-height: 150px;
+        border-radius: 20px 0 0 20px;
     }
     .hostel .aside-stars {
         margin-top: 0;
@@ -711,34 +713,43 @@ footer .wrapper {
         max-width: 100%;
         border-radius: 0;
     }
+    #accommodation h2{
+        width: 90%;
+        margin: 10px auto;
+    }
+    #accommodation button {
+        margin: 20px auto;
+    }
     .marseille ul {
-        width: 100%;
+        width: 90%;
+        margin: 10px auto;
         justify-content: space-around;
+        gap: 40px
+    }
+    .marseille ul li {
+        flex: 1 1 calc(50% - 25px);
     }
     .hostel-list {
-        width: 245px;
         text-align: center;
     }
 
     /*activités*/
      #activities {
-        padding: 20px 10px;
-        max-width: 100%;
+        padding: 20px 0;
+        margin: 10px auto;
+        max-width: 90%;
     }
     .main-todo {
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
-    }/*
-    .main-todo article {
-        width: 90%;
-        height: 230px;
     }
-    .half {
-        margin: 0;
-        width: 100%;
-    } */
-    
-    
+    .main-todo > * {
+        flex: 1 1 calc(50% - 25px);
+    }
     /*footer*/
+    footer .wrapper {
+        width: 90%;
+        margin: 10px auto;
+    }
 }     
