@@ -451,7 +451,7 @@ footer .wrapper {
 }
 
 /*responsive mobile*/
-@media screen and (min-width:320px) and (max-width: 767px) {
+@media screen and (max-width: 479px) {
     main, header, .wrapper {
         width: auto;
         flex: none;
@@ -476,9 +476,16 @@ footer .wrapper {
         margin-left: 0;
     }
     /*design nav*/
+    nav ul {
+        margin: 0;
+    }
+    nav li {
+        width: 100%;
+        text-align: center;
+    }
     nav li a{
         padding:  40px 40px 20px 40px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         border-bottom: 4px solid #f2f2f2;
     }
     #banner li .nav:hover,:focus {
@@ -579,7 +586,7 @@ footer .wrapper {
     }    
 }
 /*responsive tablette*/
-@media screen and (min-width: 768px) and (max-width: 1024px){
+@media screen and (min-width: 480px) and (max-width: 1024px){
     /*Header*/
     body {
         width:100%
@@ -635,6 +642,7 @@ footer .wrapper {
     #popular {
         padding: 10px 10px 20px 10px;
         border-radius: 0;
+        width: 100%;
     }
     #popular h2 {
         margin-bottom: 0;
@@ -642,19 +650,26 @@ footer .wrapper {
     #popular ul{
         display: flex;
         flex-direction: row;
-        gap: 10px
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    #popular ul li {
+        width: 100%;
     }
     #popular .hostel {
         display: flex;
         flex-direction: column;
         height: 230px;
-        text-align :center;  
+        text-align :center; 
+
     }
     .hostel {
-        margin-bottom: 0;
+        margin: 10px auto;
+        width: 90%;
     }  
     .hostel figcaption {
         min-height: auto;
+    padding: 0;
     } 
     .hostel figcaption >p  {
         margin-top: auto;
@@ -666,4 +681,39 @@ footer .wrapper {
     .hostel .aside-stars {
         margin-top: 0;
     }
-}
+    #accommodation {
+        padding: 20px 10px;
+        max-width: 100%;
+        border-radius: 0;
+    }
+    .marseille ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .hostel-list {
+        width: 245px;
+        text-align: center;
+    }
+
+    /*activités*/
+     #activities {
+        padding: 20px 10px;
+        max-width: 100%;
+    }
+    .main-todo {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }/*
+    .main-todo article {
+        width: 90%;
+        height: 230px;
+    }
+    .half {
+        margin: 0;
+        width: 100%;
+    } */
+    
+    
+    /*footer*/
+}     
