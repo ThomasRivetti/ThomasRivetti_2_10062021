@@ -38,7 +38,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body, p {
+body {
 	line-height: 1.5;
     font-family: 'raleway', sans-serif;
 }
@@ -84,7 +84,9 @@ h4, .fa-star {
     font-weight: bold;
     color: black;
 }
-main, header, .wrapper {
+main, 
+header, 
+.wrapper {
     max-width: 1340px;
     width: 100%;
     margin-left: auto;
@@ -93,6 +95,12 @@ main, header, .wrapper {
 button:hover {
     color: #0065FC;
     cursor: pointer;
+}
+header, 
+#found, 
+#activities, 
+footer {
+    padding: 0 20px;
 }
 /*header*/
 nav {
@@ -277,7 +285,7 @@ p span >i {
     background-color: #f2f2f2;
     padding: 40px;
     max-width: 880px;
-    /* margin-right: 40px; */
+    margin-left: 20px;
     border-radius: 25px;
 }
 .marseille {
@@ -287,6 +295,16 @@ p span >i {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
+}
+.marseille ul li {
+    flex: 1 1 calc(33.33% - 50px);
+}
+@media screen and (min-width: 1084px) and (max-width: 1090px) {
+    .marseille ul li {
+        flex: 1 1 calc(50% - 25px);
+    }
+}
+    
 }
 .hostel-list h5 {
     margin: 3px 0;
@@ -301,10 +319,16 @@ p span >i {
     background-color: white;
     box-shadow: 6px 6px 5px rgba(0,0,0,0.1 );    
 }
+.marseille a {
+    display: block;
+}
+.marseille article, .marseille a {
+    min-height: 100%;
+}
 .hostel-list img{
     justify-content: flex-start;
     border-radius: 20px 20px 0 0;
-    width: 240px;
+    width: 100%;
     height: 115px;
     object-fit: cover;
 } 
@@ -337,6 +361,7 @@ p span >i {
     background-color: #f2f2f2;
     padding: 40px;
     border-radius: 25px;
+    margin-right: 20px;
 }
 aside h2 {
     display: flex;
@@ -489,7 +514,7 @@ footer .wrapper {
         border-bottom: 4px solid #f2f2f2;
     }
     #banner li .nav:hover,:focus {
-        border: none;
+        border-top-color: transparent;
         border-bottom: 4px solid#0065fc;
         font-weight: bold;
     }
