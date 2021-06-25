@@ -352,6 +352,7 @@ p span >i {
     font-family: 'raleway';
     font-size: 1.6rem;
     font-weight: bold;
+    align-self: flex-start;
 }
 /*aside*/
 #popular {
