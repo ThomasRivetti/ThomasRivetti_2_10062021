@@ -407,10 +407,13 @@ aside h2 {
 }
 .main-todo {
     display: flex;
-    gap: 40px;
+    gap: 40px;  
 }
 .main-todo h4{
     padding: 20px;
+}
+.main-todo > * {
+    flex: 1 1 calc(25% - 120px);
 }
 .half {
     display: flex;
