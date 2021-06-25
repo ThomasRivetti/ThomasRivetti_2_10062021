@@ -451,7 +451,7 @@ footer .wrapper {
 }
 
 /*responsive mobile*/
-@media screen and (max-device-width:338px) {
+@media screen and (min-width:320px) and (max-width: 767px) {
     main, header, .wrapper {
         width: auto;
         flex: none;
@@ -605,6 +605,9 @@ footer .wrapper {
     }
     .filters ul {
         width: 100%;
+    }
+    .filters li {
+        margin: 0 5px;
     }
     .filters span {
         font-size: 1.2rem;
