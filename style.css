@@ -451,7 +451,7 @@ footer .wrapper {
 }
 
 /*responsive mobile*/
-@media screen and (max-width:338px) {
+@media screen and (max-device-width:338px) {
     main, header, .wrapper {
         width: auto;
         flex: none;
@@ -473,6 +473,7 @@ footer .wrapper {
         order: 3;
         width: 100%;
         justify-content: space-around;
+        margin-left: 0;
     }
     /*design nav*/
     nav li a{
@@ -530,6 +531,9 @@ footer .wrapper {
         flex-direction: column-reverse;
         width: 100%;
     }
+    #popular h2 {
+        margin-bottom: 0;
+    }
     #popular {
         width: 100%;
         padding: 10px;
@@ -541,6 +545,9 @@ footer .wrapper {
         margin: 0;
         width: 100%;
         background:none;
+    }
+    #accommodation button {
+        background-color: white;
     }
     .marseille li{
         width: 100%;
@@ -570,4 +577,90 @@ footer .wrapper {
     .column {
         padding: 0;
     }    
+}
+/*responsive tablette*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    /*Header*/
+    body {
+        width:100%
+    }
+    header {
+        padding: 0 30px;
+    }
+    /*section 1*/
+    #found h1, p, #important{
+        text-align: center;
+    }
+    .nav-search {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .filters {
+        margin-top: 20px;
+       margin-bottom: 0;
+    }
+    .filters h3 {
+        display: none;
+    }
+    .filters ul {
+        width: 100%;
+    }
+    .filters span {
+        font-size: 1.2rem;
+    }
+    #found {
+        margin-top: 0;
+    }
+    #found .fa-search {
+        display: flex;
+    }
+    #found #button span{
+        display: none;
+    }
+    .found {
+        margin: 10px;
+    }    
+    
+    /*section 2*/
+    #main-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    /*aside*/
+    #popular {
+        padding: 10px 10px 20px 10px;
+        border-radius: 0;
+    }
+    #popular h2 {
+        margin-bottom: 0;
+    }
+    #popular ul{
+        display: flex;
+        flex-direction: row;
+        gap: 10px
+    }
+    #popular .hostel {
+        display: flex;
+        flex-direction: column;
+        height: 230px;
+        text-align :center;  
+    }
+    .hostel {
+        margin-bottom: 0;
+    }  
+    .hostel figcaption {
+        min-height: auto;
+    } 
+    .hostel figcaption >p  {
+        margin-top: auto;
+    }
+    .hostel img {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .hostel .aside-stars {
+        margin-top: 0;
+    }
 }

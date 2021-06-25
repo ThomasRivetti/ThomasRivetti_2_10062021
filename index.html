@@ -30,48 +30,50 @@
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class=subtitle>En plein centre ville ou en pleine nature</p>
             <!--champ de recherche-->
-            <div class="found">    
-                <form method="post" action="traitement.php">
-                    <div class="field">
-                        <label for="search"><i class="fas fa-map-marker-alt"></i></label>
-                        <input type="text" name="rechercher" id="search" placeholder="Marseille, France">                                                
-                        <button type="submit" id="button">
-                            <i class="fas fa-search"></i>
-                            <span>Rechercher</span>
-                        </button>                                               
-                    </div>                       
-                </form>
-            </div>
-            <!--les filtres de recherche-->
-            <div class="filters">
-                <h3>Filtres</h3>
-                <ul>
-                    <li>
-                        <button class="filter-eco">
-                            <i class="fas fa-money-bill-wave"></i>
-                            <span>Economique</span> 
-                        </button>
-                    </li>
-                    <li>
-                        <button class="filter-family">
-                            <i class="fas fa-child"></i> 
-                            <span>Familial</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="filter-love">
-                            <i class="fas fa-heart"></i>
-                            <span>Romantique</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="filter-pet">
-                            <i class="fas fa-dog"></i>
-                            <span>Animaux autorisés</span>  
-                        </button>
-                    </li>
-                </ul>
-            </div>
+            <div class="nav-search">
+                <div class="found">    
+                    <form method="post" action="traitement.php">
+                        <div class="field">
+                            <label for="search"><i class="fas fa-map-marker-alt"></i></label>
+                            <input type="text" name="rechercher" id="search" placeholder="Marseille, France">                                                
+                            <button type="submit" id="button">
+                                <i class="fas fa-search"></i>
+                                <span>Rechercher</span>
+                            </button>                                               
+                        </div>                       
+                    </form>
+                </div>
+                <!--les filtres de recherche-->
+                <div class="filters">
+                    <h3>Filtres</h3>
+                    <ul>
+                        <li>
+                            <button class="filter-eco">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span>Economique</span> 
+                            </button>
+                        </li>
+                        <li>
+                            <button class="filter-family">
+                                <i class="fas fa-child"></i> 
+                                <span>Familial</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="filter-love">
+                                <i class="fas fa-heart"></i>
+                                <span>Romantique</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="filter-pet">
+                                <i class="fas fa-dog"></i>
+                                <span>Animaux autorisés</span>  
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>    
             <p id="important">
                 <span><i class="fas fa-info"></i></span>
                 Plus de 500 logements sont disponibles dans cette ville
